@@ -1,23 +1,20 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "XU Borong",
+    "label": "Robotics Engineer",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "Borongxu@outlook.com",
+    "phone": "+852 8491 8005",
+    "url": "https://boring180.github.io/",
+    "summary": "A Engineering student who is passionate about Robotics and Artificial Intelligence. I am currently studying in the Hong Kong University of Science and Technology.  This page is under construction, please don't get shocked by the information below.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "Clear Water Bay",
+      "countryCode": "HK"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
+        "network": "Instagram",
+        "username": "boron_x",
         "url": "https://twitter.com/AlbertEinstein"
       }
     ]
@@ -47,14 +44,11 @@
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
+      "institution": "Hong Kong University of Science and Technology",
+      "location": "Clear Water Bay, Hong Kong",
+      "url": "https://www.ust.hk/",
+      "studyType": "Bachelor",
+      "startDate": "2022-09-01",
       "courses": ["Theory of Relativity"]
     }
   ],
