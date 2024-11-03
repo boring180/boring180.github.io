@@ -16,13 +16,13 @@ news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-### Who am I
+### **Who am I**
 
 XU, Borong
 
 许博容
 
-### You can call me
+### **You can call me**
 
 许博容
 
@@ -30,13 +30,13 @@ Borong
 
 Bob
 
-### Facts about me
+### **Facts about me**
 
 ENTJ
 
 Long-distance relationship 🇭🇰🇦🇺
 
-### Where am I from
+### **Where am I from**
 
 **RDFZ 22’**
 
@@ -48,7 +48,7 @@ Former student of Division of Integrative Systems and Design (transfer out)
 
 Current student of Department of Computer Engineering
 
-### The person I want to be:
+### **The person I want to be:**
 
 Innovator
 
@@ -56,13 +56,9 @@ Robotics expert
 
 Stem educator
 
-### Also, the person I don’t want to be:
-
-A boring programmer
-
 ---
 
-### My love for robotics
+### **My love for robotics**
 
 RoboMaster High School Summer Camp 2020 mechanical, team member
 
@@ -74,7 +70,7 @@ RoboMaster High School Student Ambassador
 
 2022 - 2024 FRC & FTC mentor
 
-### My poor skills in robotics
+### **My poor skills in robotics**
 
 Mechanical design-Solid Works
 

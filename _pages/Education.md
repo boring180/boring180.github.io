@@ -8,7 +8,7 @@ nav_order: 6
 ---
 
 # **HKUST - Computer Engineering**
-### **Computer Engineering Fundamentals**
+### **Fundamentals**
 
 | Course    | Grade |
 | -------- | ------- |
@@ -28,7 +28,7 @@ nav_order: 6
 | -------- | ------- |
 
 <br/>
-### **Computer Engineering Fundamentals / Theory**
+### **Algorithm**
 
 | Course    | Grade |
 | -------- | ------- |
