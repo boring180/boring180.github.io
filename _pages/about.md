@@ -2,11 +2,10 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: my_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Computer Engineering </p>
@@ -17,8 +16,70 @@ news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+### Who am I
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+XU, Borong
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+许博容
+
+### You can call me
+
+许博容
+
+Borong
+
+Bob
+
+### Facts about me
+
+ENTJ
+
+Long-distance relationship 🇭🇰🇦🇺
+
+### Where am I from
+
+**RDFZ 22’**
+
+本部高考/Gaokao Taker
+
+**HKUST 26’**
+
+Former student of Division of Integrative Systems and Design (transfer out)
+
+Current student of Department of Computer Engineering
+
+### The person I want to be:
+
+Innovator
+
+Robotics expert
+
+Stem educator
+
+### Also, the person I don’t want to be:
+
+A boring programmer
+
+---
+
+### My love for robotics
+
+RoboMaster High School Summer Camp 2020 mechanical, team member
+
+RoboMaster High School Summer Camp 2021 mechanical, team leader
+
+RoboMaster High School Student Ambassador
+
+2021 FRC mechanical chief engineer & driver coach
+
+2022 - 2024 FRC & FTC mentor
+
+### My poor skills in robotics
+
+Mechanical design-Solid Works
+
+Arduino and ESP32 programming
+
+ROS Noetic
+
+---
