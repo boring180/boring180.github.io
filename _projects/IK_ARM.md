@@ -4,7 +4,7 @@ title: IK arm
 description: A 5-axis arm controlled by Inverse Kinematics
 img:
 importance: 1
-category: robotics
+category: Robotics
 ---
 # This is the final project of ISDN 2601
 

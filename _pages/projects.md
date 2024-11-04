@@ -2,10 +2,10 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: This page is under construction.
 nav: true
 nav_order: 3
-display_categories: [robotics, FIRST, fun, design, others]
+display_categories: [Robotics, FIRST, Fun, Design, Others]
 horizontal: false
 ---
 <!-- pages/projects.md -->

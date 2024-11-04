@@ -32,25 +32,72 @@
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "3 times Dean's List",
+      "date": "2023-2024",
+      "awarder": "HKUST",
+      "summary": "Recognized for academic excellence in 2023 Spring, 2023 Fall and 2024 Spring."
+    },
+    {
+      "title": "Continuing Scholarship",
+      "date": "2023",
+      "awarder": "HKUST",
+      "summary": "Awarded a continuing scholarship of 10,000 HKD."
+    },
+    {
+      "title": "Bronze Medal, The Innovation Competition",
+      "date": "2023",
+      "awarder": "HKIE",
+      "summary": "Received the Bronze Medal in The Innovation Competition organized by HKIE."
+    },
+    {
+      "title": "Entry Scholarship",
+      "date": "2022",
+      "awarder": "HKUST",
+      "summary": "Awarded an entry scholarship of 70,000 HKD."
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "name": "Artificial Intelligence",
+      "icon": "fa-solid fa-eye",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Machine Learning",
+        "Deep Learning",
+        "Numpy",
+        "Tensorflow"
+      ]
+    },
+    {
+      "name": "Robotics",
+      "icon": "fa-solid fa-robot",
+      "keywords": [
+        "ROS",
+        "SLAM",
+        "Path Planning",
+        "Computer Vision",
+        "Control Theory",
+        "ESP32"
+      ]
+    },
+    {
+      "name": "Mechanical Design",
+      "icon": "fa-solid fa-tools",
+      "keywords": [
+        "SolidWorks",
+        "3D Printing",
+        "Lasercutting",
+        "Handcrafting"
+      ]
+    },
+    {
+      "name": "others",
+      "icon": "fa-solid fa-ellipsis-h",
+      "keywords": [
+        "Davinci Resolve",
+        "Docker",
+        "Git",
+        "Markdown",
+        "LaTeX"
       ]
     }
   ],

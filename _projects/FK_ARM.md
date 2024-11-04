@@ -4,7 +4,7 @@ title: FK arm
 description: A Forward Kinematics calculation of a 5-axis arm
 img: 
 importance: 1
-category: robotics
+category: Robotics
 ---
 ## Method 1
 
