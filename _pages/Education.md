@@ -15,16 +15,16 @@ nav_order: 6
 | Calculus I  | A    |
 | Calculus II | A-     |
 | Linear Algebra    | A    |
-| Multivariable Calculus   | pending   |
+| Multivariable Calculus   | In progress   |
 | Discrete Math    | A+    |
 | Statistics<sup>[1][2]</sup>    | T    |
 | General Physics    | A    |
 | Smart Mechatronic    | A    |
-| Technical Communication   | pending    |
+| Technical Communication   | In progress    |
 | C++   | A    |
 | Object-Oriented-programming    | A    |
 | Computer Organization     | A+    |
-| Operating System     | pending    |
+| Operating System     | In progress    |
 | -------- | ------- |
 
 <br/>
@@ -34,7 +34,7 @@ nav_order: 6
 | -------- | ------- |
 | Artificial Intelligence    | A+ |
 | Algorithm | A     |
-| Machine Learning<sup>[1]</sup>    | pending    |
+| Machine Learning<sup>[1]</sup>    | In progress    |
 | -------- | ------- |
 
 <br/>
@@ -42,13 +42,14 @@ nav_order: 6
 
 | Course    | Grade |
 | -------- | ------- |
-| Mobile Robotics    | pending |
+| Mobile Robotics    | In progress |
 | -------- | ------- |
 
 <br/>
 [1] Cross Carrer Postgraduate Course\
 [2] Exchange Program at Shanghai Jiao Tong University
 <br/>
+
 # **Language Qualification**
 
 | Language    | Qualification |
