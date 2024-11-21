@@ -17,7 +17,7 @@ nav_order: 6
 | Linear Algebra    | A    |
 | Multivariable Calculus   | In progress   |
 | Discrete Math    | A+    |
-| Statistics<sup>[1][2]</sup>    | T    |
+| Statistics<sup>[1][2]</sup>    | Pass    |
 | General Physics    | A    |
 | Smart Mechatronic    | A    |
 | Technical Communication   | In progress    |

@@ -64,7 +64,8 @@
         "Machine Learning",
         "Deep Learning",
         "Numpy",
-        "Tensorflow"
+        "Tensorflow",
+        "PyTorch"
       ]
     },
     {
@@ -76,7 +77,8 @@
         "Path Planning",
         "Computer Vision",
         "Control Theory",
-        "ESP32"
+        "ESP32",
+        "Respberry Pi"
       ]
     },
     {
@@ -85,8 +87,7 @@
       "keywords": [
         "SolidWorks",
         "3D Printing",
-        "Lasercutting",
-        "Handcrafting"
+        "Lasercutting"
       ]
     },
     {
@@ -95,15 +96,13 @@
       "keywords": [
         "Davinci Resolve",
         "Docker",
-        "Git",
-        "Markdown",
-        "LaTeX"
+        "Manim"
       ]
     }
   ],
   "languages": [
     {
-      "language": "Chinese",
+      "language": "Mandarin Chinese",
       "fluency": "Native speaker"
     },
     {
