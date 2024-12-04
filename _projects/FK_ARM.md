@@ -2,10 +2,11 @@
 layout: page
 title: FK arm
 description: A Forward Kinematics calculation of a 5-axis arm
-img: 
+img:
 importance: 1
 category: Robotics
 ---
+
 ## Method 1
 
 Use a loop function to calculate the matrix
@@ -27,7 +28,7 @@ double matrixW[4][4] =  {
     {0,1,0,0},
     {0,0,1,0},
     {0,0,0,1}
-}; 
+};
 
 void multiply(double trans[][4], double mat1[][4], double result[][4]) {
     for(int i = 0; i < 4; ++i) {
@@ -43,10 +44,10 @@ void multiply(double trans[][4], double mat1[][4], double result[][4]) {
 
 void calculateW(){
     for(int i = 4; i > -1; i--){
-    double trans[4][4] = 
-    {{cos(rot[i]), -sin(rot[i]), 0, a[i]}, 
-    {sin(rot[i])*cos(alpha[i]), cos(rot[i])*cos(alpha[i]), -sin(alpha[i]), -sin(alpha[i])*d[i]}, 
-    {sin(rot[i])*sin(alpha[i]), cos(rot[i])*sin(alpha[i]), cos(alpha[i]), cos(alpha[i])*d[i]}, 
+    double trans[4][4] =
+    {{cos(rot[i]), -sin(rot[i]), 0, a[i]},
+    {sin(rot[i])*cos(alpha[i]), cos(rot[i])*cos(alpha[i]), -sin(alpha[i]), -sin(alpha[i])*d[i]},
+    {sin(rot[i])*sin(alpha[i]), cos(rot[i])*sin(alpha[i]), cos(alpha[i]), cos(alpha[i])*d[i]},
     {0, 0, 0, 1}};
     double result[4][4];
     multiply(matrixW, trans, result);
@@ -113,7 +114,7 @@ double rot[5] = {0,0,0,0,0};
 /**************************************************/
 double beta[5] = {-M_PI/2,0,0,M_PI/2,0};
 /**************************************************/
-double matrix[4][4] = 
+double matrix[4][4] =
 {{1, 0, 0, 0},
 {0, 1, 0, 0},
 {0, 0, 1, 0},

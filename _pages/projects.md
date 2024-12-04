@@ -8,6 +8,7 @@ nav_order: 3
 display_categories: [Robotics, Computer Science, FIRST, Fun, Design, Others]
 horizontal: false
 ---
+
 <!-- pages/projects.md -->
 
 <div class="projects">

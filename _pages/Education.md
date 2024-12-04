@@ -8,42 +8,43 @@ nav_order: 6
 ---
 
 # **HKUST - Computer Engineering**
+
 ### **Fundamentals**
 
-| Course    | Grade |
-| -------- | ------- |
-| Calculus I  | A    |
-| Calculus II | A-     |
-| Linear Algebra    | A    |
-| Multivariable Calculus   | In progress   |
-| Discrete Math    | A+    |
-| Statistics<sup>[1][2]</sup>    | Pass    |
-| General Physics    | A    |
-| Smart Mechatronic    | A    |
-| Technical Communication   | In progress    |
-| C++   | A    |
-| Object-Oriented-programming    | A    |
-| Computer Organization     | A+    |
-| Operating System     | In progress    |
-| -------- | ------- |
+| Course                      | Grade       |
+| --------------------------- | ----------- |
+| Calculus I                  | A           |
+| Calculus II                 | A-          |
+| Linear Algebra              | A           |
+| Multivariable Calculus      | In progress |
+| Discrete Math               | A+          |
+| Statistics<sup>[1][2]</sup> | Pass        |
+| General Physics             | A           |
+| Smart Mechatronic           | A           |
+| Technical Communication     | In progress |
+| C++                         | A           |
+| Object-Oriented-programming | A           |
+| Computer Organization       | A+          |
+| Operating System            | In progress |
+| --------                    | -------     |
 
 <br/>
 ### **Algorithm**
 
-| Course    | Grade |
-| -------- | ------- |
-| Artificial Intelligence    | A+ |
-| Algorithm | A     |
-| Machine Learning<sup>[1]</sup>    | In progress    |
-| -------- | ------- |
+| Course                         | Grade       |
+| ------------------------------ | ----------- |
+| Artificial Intelligence        | A+          |
+| Algorithm                      | A           |
+| Machine Learning<sup>[1]</sup> | In progress |
+| --------                       | -------     |
 
 <br/>
 ### **Robotics**
 
-| Course    | Grade |
-| -------- | ------- |
-| Mobile Robotics    | In progress |
-| -------- | ------- |
+| Course          | Grade       |
+| --------------- | ----------- |
+| Mobile Robotics | In progress |
+| --------        | -------     |
 
 <br/>
 [1] Cross Carrer Postgraduate Course\
@@ -52,7 +53,7 @@ nav_order: 6
 
 # **Language Qualification**
 
-| Language    | Qualification |
-| -------- | ------- |
-| English-IELTS | 7.5 overall |
-| -------- | ------- |
+| Language      | Qualification |
+| ------------- | ------------- |
+| English-IELTS | 7.5 overall   |
+| --------      | -------       |

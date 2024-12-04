@@ -6,6 +6,7 @@ img:
 importance: 1
 category: Robotics
 ---
+
 # This is the final project of ISDN 2601
 
 In this project, I use inverse Kinematics(IK) to calculate the rotation of the arm's joints and use the arm actuator program to apply the calculation results.

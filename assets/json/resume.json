@@ -60,70 +60,36 @@
     {
       "name": "Artificial Intelligence",
       "icon": "fa-solid fa-eye",
-      "keywords": [
-        "Machine Learning",
-        "Deep Learning",
-        "Numpy",
-        "Tensorflow",
-        "PyTorch"
-      ]
+      "keywords": ["Machine Learning", "Deep Learning", "Numpy", "Tensorflow", "PyTorch"]
     },
     {
       "name": "Robotics",
       "icon": "fa-solid fa-robot",
-      "keywords": [
-        "ROS",
-        "SLAM",
-        "Path Planning",
-        "Computer Vision",
-        "Control Theory",
-        "ESP32",
-        "Respberry Pi"
-      ]
+      "keywords": ["ROS", "SLAM", "Path Planning", "Computer Vision", "Control Theory", "ESP32", "Respberry Pi"]
     },
     {
       "name": "Mechanical Design",
       "icon": "fa-solid fa-tools",
-      "keywords": [
-        "SolidWorks",
-        "3D Printing",
-        "Lasercutting"
-      ]
+      "keywords": ["SolidWorks", "3D Printing", "Lasercutting"]
     },
     {
       "name": "others",
       "icon": "fa-solid fa-ellipsis-h",
-      "keywords": [
-        "Davinci Resolve",
-        "Docker",
-        "Manim"
-      ]
+      "keywords": ["Davinci Resolve", "Docker", "Manim"]
     }
   ],
   "interests": [
     {
       "name": "Robotics",
-      "keywords": [
-        "SLAM",
-        "Path Planning",
-        "Computer Vision",
-        "Control Theory"
-      ]
+      "keywords": ["SLAM", "Path Planning", "Computer Vision", "Control Theory"]
     },
     {
       "name": "Artificial Intelligence",
-      "keywords": [
-        "Machine Learning",
-        "Deep Learning",
-        "LLM"
-      ]
+      "keywords": ["Machine Learning", "Deep Learning", "LLM"]
     },
     {
       "name": "Design",
-      "keywords": [
-        "UI/UX",
-        "Design Thinking"
-      ]
+      "keywords": ["UI/UX", "Design Thinking"]
     }
   ],
   "languages": [
