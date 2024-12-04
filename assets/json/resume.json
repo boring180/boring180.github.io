@@ -100,6 +100,32 @@
       ]
     }
   ],
+  "interests": [
+    {
+      "name": "Robotics",
+      "keywords": [
+        "SLAM",
+        "Path Planning",
+        "Computer Vision",
+        "Control Theory"
+      ]
+    },
+    {
+      "name": "Artificial Intelligence",
+      "keywords": [
+        "Machine Learning",
+        "Deep Learning",
+        "LLM"
+      ]
+    },
+    {
+      "name": "Design",
+      "keywords": [
+        "UI/UX",
+        "Design Thinking"
+      ]
+    }
+  ],
   "languages": [
     {
       "language": "Mandarin Chinese",
