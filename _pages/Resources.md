@@ -9,7 +9,7 @@ nav_order: 6
 
 # Resources
 
-**Hand written notes of PHYS1003 COMP2211 COMP2611 COMP2711 COMP3711**
+**Hand written notes of PHYS1003 COMP2211 COMP2611 COMP2711 COMP3711 COMP5212**
 
 - [Onedrive link](https://hkustconnect-my.sharepoint.com/:f:/g/personal/bxuar_connect_ust_hk/EuXzafuQpNZLvl_9r_aPqUcBUB6B89rpr_9EenPDDnqz4w?e=n7zxuC)
 

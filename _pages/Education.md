@@ -18,7 +18,7 @@ nav_order: 6
 | Linear Algebra              | A           |
 | Multivariable Calculus      | In progress |
 | Discrete Math               | A+          |
-| Statistics<sup>[1][2]</sup> | Pass        |
+| Statistics<sup>[1][2]</sup> | T           |
 | General Physics             | A           |
 | Smart Mechatronic           | A           |
 | Technical Communication     | In progress |
@@ -43,7 +43,7 @@ nav_order: 6
 
 | Course          | Grade       |
 | --------------- | ----------- |
-| Mobile Robotics | In progress |
+| Mobile Robotics | A+ |
 | --------        | -------     |
 
 <br/>

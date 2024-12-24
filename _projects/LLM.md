@@ -8,3 +8,4 @@ category: Others
 ---
 
 This research project aims to find the possibility of using LLM to play the classical Chinese poker game "斗地主".
+More information on the repository [here](https://github.com/boring180/ChinesePokerAi)
