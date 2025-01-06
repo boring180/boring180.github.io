@@ -16,16 +16,16 @@ nav_order: 6
 | Calculus I                  | A           |
 | Calculus II                 | A-          |
 | Linear Algebra              | A           |
-| Multivariable Calculus      | In progress |
+| Multivariable Calculus      | A           |
 | Discrete Math               | A+          |
 | Statistics<sup>[1][2]</sup> | T           |
 | General Physics             | A           |
 | Smart Mechatronic           | A           |
-| Technical Communication     | In progress |
+| Technical Communication     | A           |
 | C++                         | A           |
 | Object-Oriented-programming | A           |
 | Computer Organization       | A+          |
-| Operating System            | In progress |
+| Operating System            | A+          |
 | --------                    | -------     |
 
 <br/>
@@ -35,7 +35,7 @@ nav_order: 6
 | ------------------------------ | ----------- |
 | Artificial Intelligence        | A+          |
 | Algorithm                      | A           |
-| Machine Learning<sup>[1]</sup> | In progress |
+| Machine Learning<sup>[1]</sup> | B+          |
 | --------                       | -------     |
 
 <br/>
@@ -43,7 +43,7 @@ nav_order: 6
 
 | Course          | Grade       |
 | --------------- | ----------- |
-| Mobile Robotics | A+ |
+| Mobile Robotics | A+          |
 | --------        | -------     |
 
 <br/>
