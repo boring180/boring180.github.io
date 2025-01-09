@@ -25,7 +25,7 @@ XU, Borong
 
 Borong
 
-Bob(Only if you cannot pronounce my name)
+Bob
 
 ### **Facts about me**
 

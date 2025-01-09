@@ -11,40 +11,40 @@ nav_order: 6
 
 ### **Fundamentals**
 
-| Course                      | Grade       |
-| --------------------------- | ----------- |
-| Calculus I                  | A           |
-| Calculus II                 | A-          |
-| Linear Algebra              | A           |
-| Multivariable Calculus      | A           |
-| Discrete Math               | A+          |
-| Statistics<sup>[1][2]</sup> | T           |
-| General Physics             | A           |
-| Smart Mechatronic           | A           |
-| Technical Communication     | A           |
-| C++                         | A           |
-| Object-Oriented-programming | A           |
-| Computer Organization       | A+          |
-| Operating System            | A+          |
-| --------                    | -------     |
+| Course                      | Grade   |
+| --------------------------- | ------- |
+| Calculus I                  | A       |
+| Calculus II                 | A-      |
+| Linear Algebra              | A       |
+| Multivariable Calculus      | A       |
+| Discrete Math               | A+      |
+| Statistics<sup>[1][2]</sup> | T       |
+| General Physics             | A       |
+| Smart Mechatronic           | A       |
+| Technical Communication     | A       |
+| C++                         | A       |
+| Object-Oriented-programming | A       |
+| Computer Organization       | A+      |
+| Operating System            | A+      |
+| --------                    | ------- |
 
 <br/>
 ### **Algorithm**
 
-| Course                         | Grade       |
-| ------------------------------ | ----------- |
-| Artificial Intelligence        | A+          |
-| Algorithm                      | A           |
-| Machine Learning<sup>[1]</sup> | B+          |
-| --------                       | -------     |
+| Course                         | Grade   |
+| ------------------------------ | ------- |
+| Artificial Intelligence        | A+      |
+| Algorithm                      | A       |
+| Machine Learning<sup>[1]</sup> | B+      |
+| --------                       | ------- |
 
 <br/>
 ### **Robotics**
 
-| Course          | Grade       |
-| --------------- | ----------- |
-| Mobile Robotics | A+          |
-| --------        | -------     |
+| Course          | Grade   |
+| --------------- | ------- |
+| Mobile Robotics | A+      |
+| --------        | ------- |
 
 <br/>
 [1] Cross Carrer Postgraduate Course\
