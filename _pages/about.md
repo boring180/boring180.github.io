@@ -64,6 +64,10 @@ Snowboarding
 Gaming
 
 ---
-<noscript>
-<script type="text/javascript" id="clustrmaps" async src="//clustrmaps.com/map_v2.js?d=liXiRh1tmkqJ_50UBF8odTmAU8ZqlBWVweZ4WPyQN8s"></script>
-</noscript>
+
+<div class="hidden-elements">
+<style>
+  .hidden-elements * {display: none;}
+</style>
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=liXiRh1tmkqJ_50UBF8odTmAU8ZqlBWVweZ4WPyQN8s"></script>
+</div>
