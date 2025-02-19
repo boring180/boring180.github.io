@@ -30,12 +30,32 @@
       "courses": ["View more in the education tab"]
     }
   ],
+  "Non-award Educations": [
+    {
+      "institution": "Shanghai Jiao Tong University Global Virtual Classroom",
+      "location": "Online",
+      "startDate": "2023-09-01",
+      "courses": "Statistics"
+    },
+    {
+      "institution": "Korea University International Summer Campus",
+      "location": "Online",
+      "startDate": "2024-07-01",
+      "courses": "Database"
+    },
+    {
+      "institution": "UNSW study abroad program",
+      "location": "Sydney, Australia",
+      "startDate": "2025-02-10",
+      "courses": "Computer Vision, Control Theory"
+    }
+  ],
   "awards": [
     {
-      "title": "3 times Dean's List",
+      "title": "4 times Dean's List",
       "date": "2023-2024",
       "awarder": "HKUST",
-      "summary": "Recognized for academic excellence in 2023 Spring, 2023 Fall and 2024 Spring."
+      "summary": "Recognized for academic excellence in 2023 Spring, 2023 Fall, 2024 Spring and 2024 Fall."
     },
     {
       "title": "Continuing Scholarship",
@@ -85,11 +105,7 @@
     },
     {
       "name": "Artificial Intelligence",
-      "keywords": ["Machine Learning", "Deep Learning", "LLM"]
-    },
-    {
-      "name": "Design",
-      "keywords": ["UI/UX", "Design Thinking"]
+      "keywords": ["LLM", "Deep Learning", "Spatial Intelligence"]
     }
   ],
   "languages": [

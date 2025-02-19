@@ -37,11 +37,13 @@ Long-distance relationship 🇭🇰🇦🇺
 
 **RDFZ 22’**
 
-本部高考/Gaokao Taker
+北京高考/Gaokao Taker
 
 **HKUST 26’**
 
 Department of Computer Engineering
+
+> Move to [CV](https://boring180.github.io/CV/) page for more details
 
 ### **The person I want to be:**
 
