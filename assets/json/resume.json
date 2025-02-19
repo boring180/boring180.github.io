@@ -30,26 +30,6 @@
       "courses": ["View more in the education tab"]
     }
   ],
-  "Non-award Educations": [
-    {
-      "institution": "Shanghai Jiao Tong University Global Virtual Classroom",
-      "location": "Online",
-      "startDate": "2023-09-01",
-      "courses": "Statistics"
-    },
-    {
-      "institution": "Korea University International Summer Campus",
-      "location": "Online",
-      "startDate": "2024-07-01",
-      "courses": "Database"
-    },
-    {
-      "institution": "UNSW study abroad program",
-      "location": "Sydney, Australia",
-      "startDate": "2025-02-10",
-      "courses": "Computer Vision, Control Theory"
-    }
-  ],
   "awards": [
     {
       "title": "4 times Dean's List",

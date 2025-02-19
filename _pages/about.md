@@ -43,7 +43,7 @@ Long-distance relationship 🇭🇰🇦🇺
 
 Department of Computer Engineering
 
-> Move to [CV](https://boring180.github.io/CV/) page for more details
+> Move to [CV](https://boring180.github.io/cv/) page for more details
 
 ### **The person I want to be:**
 
@@ -64,3 +64,5 @@ Snowboarding
 Gaming
 
 ---
+
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=liXiRh1tmkqJ_50UBF8odTmAU8ZqlBWVweZ4WPyQN8s"></script>
