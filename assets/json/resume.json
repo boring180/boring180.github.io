@@ -78,16 +78,6 @@
       "keywords": ["Davinci Resolve", "Docker", "Manim"]
     }
   ],
-  "interests": [
-    {
-      "name": "Robotics",
-      "keywords": ["SLAM", "Path Planning", "Computer Vision", "Control Theory"]
-    },
-    {
-      "name": "Artificial Intelligence",
-      "keywords": ["LLM", "Deep Learning", "Spatial Intelligence"]
-    }
-  ],
   "languages": [
     {
       "language": "Mandarin Chinese",

@@ -13,13 +13,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-### **Who am I**
-
-XU, Borong
-
-许博容
-
-### **You can call me**
+### **You can call me:**
 
 许博容
 
@@ -27,13 +21,13 @@ Borong
 
 Bob
 
-### **Facts about me**
+### **Facts about me:**
 
-ENTJ
+3rd year Engineering student
 
 Long-distance relationship 🇭🇰🇦🇺
 
-### **Where am I from**
+### **Where I come from:**
 
 **RDFZ 22’**
 
@@ -52,6 +46,18 @@ Innovator
 Robotics expert
 
 Stem educator
+
+### **My Interests:**
+
+Computer Vision
+
+SLAM
+
+Path Planning
+
+LLM
+
+Spatial Intelligence
 
 ### **What I take as a hobby:**
 

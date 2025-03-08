@@ -7,6 +7,9 @@ nav: true
 nav_order: 6
 ---
 
+under construction
+
+<!--
 # **HKUST - Computer Engineering**
 
 ### **Fundamentals**
@@ -57,3 +60,5 @@ nav_order: 6
 | ------------- | ------------- |
 | English-IELTS | 7.5 overall   |
 | --------      | -------       |
+
+-->
