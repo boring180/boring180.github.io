@@ -1,0 +1,99 @@
+---
+layout: page
+---
+<div class="friends-page">
+  <style>
+    .friend-card {
+      border: 1px solid var(--global-divider-color);
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      transition: transform 0.2s ease;
+    }
+    .friend-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .friend-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .friend-info {
+      margin-left: 1rem;
+    }
+    .friend-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .friend-bio {
+      font-size: 0.9rem;
+      color: var(--global-text-color-light);
+      margin-bottom: 0.5rem;
+    }
+    .friend-link {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+    .friend-link:hover {
+      text-decoration: underline;
+    }
+    .friend-description {
+      margin-top: 0.5rem;
+      padding: 0.5rem;
+      background: var(--global-bg-color);
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+    .friend-tags {
+      margin-top: 0.3rem;
+    }
+    .friend-tag {
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      margin: 0.1rem;
+      background: var(--global-theme-color);
+      color: var(--global-bg-color);
+      border-radius: 12px;
+      font-size: 0.8rem;
+    }
+  </style>
+
+  <div class="row">
+    {% for friend in page.friends %}
+    <div class="col-sm-6 col-md-4 mb-3">
+      <div class="friend-card d-flex flex-column">
+        <div class="d-flex">
+          {% if friend.avatar %}
+          <img src="{{ friend.avatar }}" alt="{{ friend.name }}" class="friend-avatar">
+          {% else %}
+          <img src="{{ '/assets/img/default-avatar.png' | relative_url }}" alt="{{ friend.name }}" class="friend-avatar">
+          {% endif %}
+          <div class="friend-info">
+            <div class="friend-name">
+              <a href="{{ friend.url }}" class="friend-link" target="_blank">{{ friend.name }}</a>
+            </div>
+            {% if friend.bio %}
+            <div class="friend-bio">{{ friend.bio }}</div>
+            {% endif %}
+          </div>
+        </div>
+        {% if friend.description %}
+        <div class="friend-description">
+          {{ friend.description }}
+        </div>
+        {% endif %}
+        {% if friend.tags %}
+        <div class="friend-tags">
+          {% for tag in friend.tags %}
+          <span class="friend-tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div> 
