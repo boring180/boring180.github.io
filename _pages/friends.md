@@ -1,6 +1,7 @@
 ---
 layout: friends
 title: Friendly Sites
+permalink: /friends/
 description:  
 nav: true
 nav_order: 6
