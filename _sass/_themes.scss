@@ -9,8 +9,8 @@
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$purple-color};
-  --global-hover-color: #{$purple-color};
+  --global-theme-color: #{$prototype-putple};
+  --global-hover-color: #{$prototype-putple};
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$grey-color-dark};
   --global-footer-text-color: #{$grey-color-light};
@@ -41,6 +41,10 @@
   --global-danger-block-bg: #ffe0e0;
   --global-danger-block-text: #600;
   --global-danger-block-title: #c00;
+
+  --global-tag-color: #{$black-color};
+  --global-tag-bg-color: #{$white-color};
+  --global-tag-border-color: #{$grey-color-light};
 
   #light-toggle-system {
     padding-left: 10px;
@@ -110,6 +114,10 @@ html[data-theme="dark"] {
   --global-danger-block-bg: #ffe0e0;
   --global-danger-block-text: #600;
   --global-danger-block-title: #c00;
+
+  --global-tag-color: #{$grey-color-light};
+  --global-tag-bg-color: #{$grey-color-dark};
+  --global-tag-border-color: #{$grey-color};
 
   .repo-img-light {
     display: none;

@@ -1,0 +1,161 @@
+---
+layout: page
+---
+
+<div class="tech-tree">
+  {% if page.techtree %}
+    <div class="tech-tree-container" style="position: relative;">
+      <svg class="connection-lines"></svg>
+      {% for category in page.techtree %}
+        <div class="tech-category">
+          <h3 class="category-title">{{ category.name }}</h3>
+          <div class="tech-items">
+            {% assign items = category.items | sort: 'level' %}
+            {% for item in items %}
+              <div class="tech-item {{ item.tag | slugify }}" 
+                   data-name="{{ item.name }}"
+                   data-level="{{ item.level | default: 0 }}"
+                   data-prerequisites="{{ item.prerequisites | join: ',' }}"
+                   data-completed="{{ item.completed | default: True}}">
+                <div class="tech-content">
+                  {% if item.tag %}
+                    <div class="tag">{{ item.tag }}</div>
+                  {% endif %}
+                  <h4>{{ item.name }}</h4>
+                  {% if item.description %}
+                    <p>{{ item.description }}</p>
+                  {% endif %}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {{ content }}
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  function arrangeNodes() {
+    const categories = document.querySelectorAll('.tech-category');
+    
+    categories.forEach(category => {
+      const items = category.querySelectorAll('.tech-item');
+      const levels = new Map();
+      
+      // First pass: Determine levels based on prerequisites
+      items.forEach(item => {
+        const prerequisites = item.dataset.prerequisites;
+        if (!prerequisites) {
+          item.dataset.level = "0";
+          if (!levels.has(0)) levels.set(0, []);
+          levels.get(0).push(item);
+        }
+      });
+
+      // Second pass: Assign levels to items with prerequisites
+      let changed;
+      do {
+        changed = false;
+        items.forEach(item => {
+          const prerequisites = item.dataset.prerequisites;
+          if (prerequisites) {
+            const prereqList = prerequisites.split(',');
+            let maxLevel = -1;
+            prereqList.forEach(prereq => {
+              const prereqElement = Array.from(items).find(el => 
+                el.dataset.name.trim() === prereq.trim()
+              );
+              if (prereqElement) {
+                maxLevel = Math.max(maxLevel, parseInt(prereqElement.dataset.level || "0"));
+              }
+            });
+            const newLevel = maxLevel + 1;
+            if (parseInt(item.dataset.level || "-1") !== newLevel) {
+              item.dataset.level = newLevel.toString();
+              if (!levels.has(newLevel)) levels.set(newLevel, []);
+              levels.get(newLevel).push(item);
+              changed = true;
+            }
+          }
+        });
+      } while (changed);
+
+      // Apply positioning
+      const itemsContainer = category.querySelector('.tech-items');
+      itemsContainer.style.display = 'grid';
+      itemsContainer.style.gridTemplateColumns = '1fr';
+      itemsContainer.style.gap = '40px';
+      
+      levels.forEach((levelItems, level) => {
+        levelItems.forEach(item => {
+          item.style.gridRow = level + 1;
+          item.style.justifySelf = 'center';
+        });
+      });
+    });
+  }
+
+  function updateLines() {
+    const svg = document.querySelector('.connection-lines');
+    const container = document.querySelector('.tech-tree-container');
+    const containerRect = container.getBoundingClientRect();
+    
+    svg.innerHTML = '';
+    svg.style.position = 'absolute';
+    svg.style.top = '0';
+    svg.style.left = '0';
+    svg.style.width = '100%';
+    svg.style.height = '100%';
+    svg.style.pointerEvents = 'none';
+    
+    const techItems = document.querySelectorAll('.tech-item');
+    techItems.forEach(item => {
+      const prerequisites = item.dataset.prerequisites;
+      if (prerequisites) {
+        const prereqList = prerequisites.split(',');
+        prereqList.forEach(prereq => {
+          const prereqElement = Array.from(techItems).find(el => 
+            el.dataset.name.trim() === prereq.trim()
+          );
+          
+          if (prereqElement) {
+            const fromRect = prereqElement.getBoundingClientRect();
+            const toRect = item.getBoundingClientRect();
+            
+            const startX = fromRect.left + fromRect.width/2 - containerRect.left;
+            const startY = fromRect.bottom - containerRect.top;
+            const endX = toRect.left + toRect.width/2 - containerRect.left;
+            const endY = toRect.top - containerRect.top;
+            
+            const line = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            const midY = (startY + endY) / 2;
+            
+            line.setAttribute('d', `M ${startX} ${startY} 
+                                  C ${startX} ${midY},
+                                    ${endX} ${midY},
+                                    ${endX} ${endY}`);
+            line.setAttribute('stroke', 'var(--global-theme-color)');
+            line.setAttribute('stroke-width', '2');
+            line.setAttribute('fill', 'none');
+            line.setAttribute('opacity', '0.8');
+            
+            svg.appendChild(line);
+          }
+        });
+      }
+    });
+  }
+
+  // Initialize layout
+  arrangeNodes();
+  updateLines();
+  window.addEventListener('resize', () => {
+    arrangeNodes();
+    updateLines();
+  });
+});
+</script> 

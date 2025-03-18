@@ -568,6 +568,42 @@ footer.sticky-bottom {
       font-size: 0.875rem;
       padding-top: 0.25rem;
       padding-bottom: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+
+      a {
+        color: var(--global-text-color-light);
+        text-decoration: none;
+
+        &:hover {
+          color: var(--global-theme-color);
+        }
+      }
+
+      .completion-status {
+        display: inline-block;
+        padding: 0.2em 0.6em;
+        font-size: 0.875rem;
+        border-radius: 0.25em;
+        
+        &.completed {
+          background-color: var(--global-tip-block);
+          color: var(--global-bg-color);
+        }
+
+        &.in-progress {
+          color: var(--global-warning-block);
+          background-color: transparent;
+          border: 1px solid var(--global-warning-block);
+        }
+
+        &.not-started {
+          background-color: var(--global-danger-block);
+          color: var(--global-bg-color);
+        }
+      }
     }
 
     a {
@@ -888,6 +924,75 @@ html.transition *:after {
 
       &:hover {
         color: var(--global-theme-color);
+      }
+    }
+  }
+
+  .post-title {
+    color: var(--global-text-color);
+    
+    i {
+      color: var(--global-theme-color);
+    }
+  }
+  
+  .post-description {
+    color: var(--global-text-color-light);
+  }
+}
+
+.archive {
+  .table {
+    color: var(--global-text-color);
+  }
+  
+  .post-link {
+    color: var(--global-theme-color);
+    text-decoration: none;
+    
+    &:hover {
+      color: var(--global-hover-color);
+    }
+  }
+
+  .post-tags {
+    color: var(--global-text-color-light);
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.25rem;
+
+    a {
+      color: var(--global-text-color-light);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+
+    .completion-status {
+      display: inline-block;
+      padding: 0.2em 0.6em;
+      font-size: 0.875rem;
+      border-radius: 0.25em;
+      
+      &.completed {
+        background-color: var(--global-tip-block);
+        color: var(--global-bg-color);
+      }
+
+      &.in-progress {
+        color: var(--global-warning-block);
+        background-color: transparent;
+        border: 1px solid var(--global-warning-block);
+      }
+
+      &.not-started {
+        background-color: var(--global-danger-block);
+        color: var(--global-bg-color);
       }
     }
   }

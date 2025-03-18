@@ -14,13 +14,29 @@ layout: default
           <tr>
             <th scope="row">{{ post.date | date: '%b %d, %Y' }}</th>
             <td>
-              {% if post.redirect == blank %}
-                <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-              {% elsif post.redirect contains '://' %}
-                <a class="post-link" href="{{ post.redirect }}" target="_blank">{{ post.title }}</a>
-              {% else %}
-                <a class="post-link" href="{{ post.redirect | relative_url }}">{{ post.title }}</a>
-              {% endif %}
+              <div>
+                {% if post.redirect == blank %}
+                  <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                {% elsif post.redirect contains '://' %}
+                  <a class="post-link" href="{{ post.redirect }}" target="_blank">{{ post.title }}</a>
+                {% else %}
+                  <a class="post-link" href="{{ post.redirect | relative_url }}">{{ post.title }}</a>
+                {% endif %}
+              </div>
+              <div class="post-tags">
+                {% if post.tags %}
+                  {% for tag in post.tags %}
+                    <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}">
+                      <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
+                    </a>
+                  {% endfor %}
+                {% endif %}
+                {% if post.completion_status %}
+                  <span class="completion-status {{ post.completion_status | downcase }}">
+                    {{ post.completion_status | replace: "-", " " | capitalize }}
+                  </span>
+                {% endif %}
+              </div>
             </td>
           </tr>
         {% endfor %}
@@ -28,3 +44,18 @@ layout: default
     </div>
   </article>
 </div>
+
+<style>
+  .post-header h1 {
+    color: var(--global-text-color);
+  }
+  .post-description {
+    color: var(--global-text-color-light);
+  }
+  .archive {
+    background-color: var(--global-bg-color);
+  }
+  .post-link:hover {
+    color: var(--global-hover-color) !important;
+  }
+</style>
