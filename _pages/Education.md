@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function createMindMap(data, containerId) {
         const width = 1200;
-        const height = 400;
+        const height = 800;
         const margin = {top: 20, right: 600, bottom: 20, left: 100};
 
         const nodeWidth = 200;
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const tree = d3.tree()
             .size([height - margin.top - margin.bottom, width - margin.right - margin.left])
-            .separation((a, b) => (a.parent == b.parent ? 1 : 1.5) * nodeHeight); // Adjust the separation between nodes
+            .separation((a, b) => (a.parent == b.parent ? 1 : 3) * nodeHeight); // Adjust the separation between nodes
 
         const root = d3.hierarchy(data);
         root.descendants().forEach((d, i) => {
