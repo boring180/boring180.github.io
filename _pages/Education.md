@@ -1,5 +1,5 @@
 ---
-layout: techtree
+layout: page
 permalink: /Education/
 title: Education
 description: My academic journey and course progression
@@ -67,3 +67,15 @@ techtree:
       - name: Feedback Control
         tag: UNSW MTRN 3020
 ---
+
+<!-- Add your tech tree visualization container -->
+<div id="container"></div>
+
+<script src="{{ '/assets/js/techTree.js' | relative_url }}"></script>
+
+<!-- Initialize the tech tree with your data -->
+<script>
+const data = {{ page.techtree | jsonify }};
+</script>
+
+
