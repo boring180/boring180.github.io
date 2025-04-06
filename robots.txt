@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://boring180.github.io/sitemap.xml
