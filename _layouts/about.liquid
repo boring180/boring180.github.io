@@ -18,19 +18,32 @@ layout: default
     {% if page.profile %}
       <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
         {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+          {% assign profile_image_is_url = false %}
+          {% if page.profile.image contains "://" %}
+            {% assign profile_image_is_url = true %}
+          {% endif %}
+
           {% if page.profile.image_circular %}
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
+
+          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+
+          {% comment %} Check if the image source is a URL {% endcomment %}
+          {% if profile_image_is_url %}
+            {% comment %} If it's a URL, pass it directly using the 'url' parameter {% endcomment %}
+            {%
+              include figure.liquid loading="eager" url=page.profile.image class=profile_image_class sizes=sizes alt=page.profile.image
+            %}
+          {% else %}
+            {% comment %} If it's not a URL, assume it's a local path, prepend assets/img/, and use 'path' with cache_bust {% endcomment %}
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {%
+              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image cache_bust=true
+            %}
+          {% endif %}
         {% endif %}
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
