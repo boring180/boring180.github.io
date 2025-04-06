@@ -2,7 +2,7 @@
 layout: page
 permalink: /Education/
 title: My skills
-description: My techtree
+description:  
 nav: true
 nav_order: 6
 ---
