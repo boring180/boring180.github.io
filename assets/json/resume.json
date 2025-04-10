@@ -17,8 +17,8 @@
       "institution": "The High School Affiliated to Renmin University of China",
       "location": "Beijing, China",
       "studyType": "Middle School",
-      "startDate": "2016-09-01",
-      "endDate": "2022-06-01",
+      "startDate": "2016-09",
+      "endDate": "2022-06",
       "courses": "Mainland JEE(高考)"
     },
     {
@@ -26,8 +26,64 @@
       "location": "Hong Kong SAR",
       "url": "https://cpeg.hkust.edu.hk/eng/programs/beng_4yr.html",
       "studyType": "Bachelor",
-      "startDate": "2022-09-01",
+      "startDate": "2022-09",
       "courses": ["View more in the education tab"]
+    }
+  ],
+  "work": [
+    {
+      "company": "FRC Team 5449",
+      "position": "Mechanical Design Engineer",
+      "startDate": "2020-09",
+      "endDate": "2021-06",
+      "summary": "Design and manufacture the robot for the competition."
+    },
+    {
+      "company": "FRC Team 5449",
+      "position": "Mentor",
+      "startDate": "2021-09",
+      "endDate": "2024-08",
+      "summary": "Mentor the team"
+    },
+    {
+      "company": "HKUST ISD",
+      "position": "Student Representative",
+      "startDate": "2022-09",
+      "endDate": "2024-01",
+      "summary": "Represent the student's interest and feedback to the ISD Department."
+    },
+    {
+      "company": "HKUST ISD",
+      "position": "Student Advisor",
+      "startDate": "2023-09",
+      "endDate": "2024-01",
+      "summary": "Provide support to the students in the ISD Department."
+    },
+    {
+      "company": "HKUST ISD",
+      "position": "Undergraduate Teaching Assistant",
+      "startDate": "2023-09",
+      "endDate": "2024-01",
+      "summary": "UGTA of ISDN1001"
+    },
+    {
+      "company": "HKUST",
+      "position": "Undergraduate Research Opportunity",
+      "startDate": "2024-01",
+      "endDate": "2024-06",
+      "summary": "Research on Stable Diffusion"
+    },
+    {
+      "company": "HKUST ISD",
+      "position": "Undergraduate Research Opportunity",
+      "startDate": "2024-07",
+      "summary": "Research on LLM Agents"
+    },
+    {
+      "company": "UNSW Robotics and AI Lab",
+      "position": "Participant",
+      "startDate": "2025-02",
+      "summary": "Setting up Unitree Go2 Robot"
     }
   ],
   "awards": [

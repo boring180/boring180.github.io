@@ -1,0 +1,21 @@
+# Navigation items
+- name: About
+  url: /
+
+- name: CV
+  url: /cv/
+
+- name: Projects
+  url: /projects/
+
+- name: Education
+  url: /Education/
+
+- name: Blog
+  url: /blog/
+
+- name: Friends
+  url: /friends/
+
+- name: Resources
+  url: /Resources/

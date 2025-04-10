@@ -84,9 +84,32 @@ document.addEventListener('DOMContentLoaded', function() {
         algorithm: {
             name: "Artificial Intelligence",
             children: [
-                {name: "Artificial Intelligence", code: "HKUST COMP2211"},
-                {name: "Machine Learning", code: "HKUST COMP5212"},
-                {name: "Computer Vision", code: "UNSW COMP9517"},
+                {name: "Machine Learning", children: [
+                    {name: "GLM", code: "HKUST COMP5212"},
+                    {name: "Expectation Maximization", code: "HKUST COMP5212"},
+                    {name: "SVM", code: "HKUST COMP5212"},
+                    {name: "Decision Trees", code: "UNSW COMP9517"},
+                    {name: "PCA", code: "HKUST COMP5212"},
+                    {name: "Naive Bayes", code: "HKUST COMP2211"},
+                    {name: "Probabilistic Graphical Models", code: "HKUST COMP5212"},
+                    {name: "HMM", code: "HKUST COMP5212"}
+                ]},
+                {name: "Deep Learning", children: [
+                    {name: "CNN", code: "HKUST COMP2211"},
+                    {name: "RCNN", code: "UNSW COMP9517"},
+                    {name: "YOLO", code: "UNSW COMP9517"},
+                    {name: "MLP", code: "HKUST COMP2211"},
+                    {name: "RNN", code: "HKUST COMP5212"},
+                    {name: "Transformer", code: "HKUST COMP5212"},
+                    {name: "GAN", code: "HKUST COMP5212"},
+                    {name: "VAE", code: "HKUST COMP5212"},
+                    {name: "LLM", code: "HKUST COMP5212"}
+                ]},
+                {name: "Other", children:[
+                    {name: "Image Processing", code: "HKUST COMP2211"},
+                    {name: "Minimax", code: "HKUST COMP2211"},
+                    {name: "Reinforcement Learning", code: "HKUST COMP5212"}
+                ]}
                 ]
         },
         robotics: {
@@ -94,16 +117,20 @@ document.addEventListener('DOMContentLoaded', function() {
             children: [
                 {name: "Software", children: [
                     {name: "Mobile Robotics", code: "HKUST ELEC3210"},
-                    {name: "Robotics Control", code: "UNSW MTRN3020"},
+                    {name: "Control System", code: "UNSW MTRN3020"},
                     {name: "ROS"},
                     {name: "ROS2"}
+                ]},
+                {name: "Hardware", children: [
+                    {name: "Circuit Design"},
+                    {name: "Soldering"},
                 ]},
                 {name: "Mechanical Design", children: [
                     {name: "CAD"},
                     {name: "Hand manufacturing"},
                     {name: "3D Printing"},
                     {name: "Laser Cutting"},
-                    {name: "Blender", code: "HKUST ISDN2300"},
+                    {name: "Blender", code: "HKUST ISDN2300"}
                 ]}
             ]
         }
@@ -111,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function createMindMap(data, containerId) {
         const width = 1200;
-        const height = 800;
+        const height = 1200;
         const margin = {top: 20, right: 600, bottom: 20, left: 100};
 
         const nodeWidth = 200;
