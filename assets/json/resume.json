@@ -121,12 +121,12 @@
     {
       "name": "Robotics",
       "icon": "fa-solid fa-robot",
-      "keywords": ["ROS", "SLAM", "Path Planning", "Computer Vision", "Control Theory", "ESP32", "Respberry Pi"]
+      "keywords": ["ROS", "ROS2", "SLAM", "Path Planning", "Computer Vision", "Control Theory"]
     },
     {
       "name": "Mechanical Design",
       "icon": "fa-solid fa-tools",
-      "keywords": ["SolidWorks", "3D Printing", "Lasercutting"]
+      "keywords": ["SolidWorks", "3D Printing", "Lasercutting", "Hand Manufacturing"]
     },
     {
       "name": "others",

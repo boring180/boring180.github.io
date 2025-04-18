@@ -116,7 +116,9 @@ document.addEventListener('DOMContentLoaded', function() {
             name: "Robotics",
             children: [
                 {name: "Software", children: [
-                    {name: "Mobile Robotics", code: "HKUST ELEC3210"},
+                    {name: "ICP odometry", code: "HKUST ELEC3210"},
+                    {name: "EKF SLAM", code: "HKUST ELEC3210"},
+                    {name: "Path Planning", code: "HKUST ELEC3210"},
                     {name: "Control System", code: "UNSW MTRN3020"},
                     {name: "ROS"},
                     {name: "ROS2"}
@@ -125,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     {name: "Circuit Design"},
                     {name: "Soldering"},
                 ]},
-                {name: "Mechanical Design", children: [
+                {name: "Mechanical", children: [
                     {name: "CAD"},
                     {name: "Hand manufacturing"},
                     {name: "3D Printing"},

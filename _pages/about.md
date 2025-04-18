@@ -35,7 +35,7 @@ Long-distance relationship 🇭🇰🇦🇺
 
 **HKUST 26’**
 
-Department of Computer Engineering
+Program of Computer Engineering
 
 > Move to [CV](https://boring180.github.io/cv/) page for more details
 
