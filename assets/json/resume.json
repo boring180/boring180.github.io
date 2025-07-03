@@ -95,9 +95,9 @@
     },
     {
       "title": "Continuing Scholarship",
-      "date": "2023",
+      "date": "2023-2024",
       "awarder": "HKUST",
-      "summary": "Awarded a continuing scholarship of 10,000 HKD."
+      "summary": "Awarded a continuing scholarship of 10,000 HKD per year."
     },
     {
       "title": "Bronze Medal, The Innovation Competition",
@@ -116,12 +116,12 @@
     {
       "name": "Artificial Intelligence",
       "icon": "fa-solid fa-eye",
-      "keywords": ["Machine Learning", "Deep Learning", "Numpy", "Tensorflow", "PyTorch"]
+      "keywords": ["Deep Learning", "PyTorch", "Multimodal Large Language Models", "Embodied AI"]
     },
     {
       "name": "Robotics",
       "icon": "fa-solid fa-robot",
-      "keywords": ["ROS", "ROS2", "SLAM", "Path Planning", "Computer Vision", "Control Theory"]
+      "keywords": ["ROS2", "SLAM", "Path Planning", "Computer Vision", "Control Theory"]
     },
     {
       "name": "Mechanical Design",
@@ -131,7 +131,7 @@
     {
       "name": "others",
       "icon": "fa-solid fa-ellipsis-h",
-      "keywords": ["Davinci Resolve", "Docker", "Manim"]
+      "keywords": ["Davinci Resolve", "Docker"]
     }
   ],
   "languages": [

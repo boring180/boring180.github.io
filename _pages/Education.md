@@ -58,8 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
             name: "Fundamentals",
             children: [
                 {name: "Mathematics", children: [
-                    {name: "Calculus I", code: "HKUST MATH1013"},
-                    {name: "Calculus II", code: "HKUST MATH1014"},
+                    {name: "Calculus", code: "HKUST MATH1013/MATH1014"},
                     {name: "Linear Algebra", code: "HKUST MATH2111"},
                     {name: "Multivariable Calculus", code: "HKUST MATH2011"},
                     {name: "Differential Equations", code: "Coursera-HKUST MATH2521"},
@@ -72,12 +71,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     {name: "Smart Mechatronic", code: "HKUST ISDN2601"}
                 ]},
                 {name: "Computer Science", children: [
-                    {name: "C++", code: "HKUST COMP2011"},
-                    {name: "Object-Oriented-programming", code: "HKUST COMP2012"},
+                    {name: "C++", code: "HKUST COMP2011/2012"},
                     {name: "Computer Organization", code: "HKUST COMP2611"},
                     {name: "Operating System", code: "HKUST COMP3511"},
-                    {name: "Algorithms", code: "HKUST COMP3711"},
-                    {name: "Data Structures", code: "HKUST COMP2012"}
+                    {name: "DSA", code: "HKUST COMP2012/3711"},
                 ]}
             ]
         },
@@ -86,27 +83,25 @@ document.addEventListener('DOMContentLoaded', function() {
             children: [
                 {name: "Machine Learning", children: [
                     {name: "GLM", code: "HKUST COMP5212"},
-                    {name: "Expectation Maximization", code: "HKUST COMP5212"},
                     {name: "SVM", code: "HKUST COMP5212"},
                     {name: "Decision Trees", code: "UNSW COMP9517"},
+                    {name: "XGBoost"},
                     {name: "PCA", code: "HKUST COMP5212"},
                     {name: "Naive Bayes", code: "HKUST COMP2211"},
                     {name: "Probabilistic Graphical Models", code: "HKUST COMP5212"},
                     {name: "HMM", code: "HKUST COMP5212"}
                 ]},
                 {name: "Deep Learning", children: [
-                    {name: "CNN", code: "HKUST COMP2211"},
-                    {name: "RCNN", code: "UNSW COMP9517"},
                     {name: "YOLO", code: "UNSW COMP9517"},
-                    {name: "MLP", code: "HKUST COMP2211"},
                     {name: "RNN", code: "HKUST COMP5212"},
-                    {name: "Transformer", code: "HKUST COMP5212"},
+                    {name: "Attention mechanism", code: "HKUST COMP5212"},
                     {name: "GAN", code: "HKUST COMP5212"},
                     {name: "VAE", code: "HKUST COMP5212"},
-                    {name: "LLM", code: "HKUST COMP5212"}
+                    {name: "Diffusion Model"},
+                    {name: "LLM", code: "HKUST COMP5212"},
+                    {name: "Vision Transformer"}
                 ]},
                 {name: "Other", children:[
-                    {name: "Image Processing", code: "HKUST COMP2211"},
                     {name: "Minimax", code: "HKUST COMP2211"},
                     {name: "Reinforcement Learning", code: "HKUST COMP5212"}
                 ]}
@@ -126,6 +121,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 {name: "Hardware", children: [
                     {name: "Circuit Design"},
                     {name: "Soldering"},
+                    {name: "STM32"},
+                    {name: "ESP32"}
                 ]},
                 {name: "Mechanical", children: [
                     {name: "CAD"},

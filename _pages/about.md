@@ -49,15 +49,11 @@ Stem educator
 
 ### **My Interests:**
 
+Embodied AI
+
 Computer Vision
 
-SLAM
-
-Path Planning
-
-LLM
-
-Spatial Intelligence
+Multimodal Large Language Models
 
 ### **What I take as a hobby:**
 

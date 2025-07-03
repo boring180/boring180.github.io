@@ -13,8 +13,8 @@ friends:
     description: My only one
     tags: [FRC5449, RDFZ, UNSW]
   - name: ZhangzrJerry
-    avatar: https://zhangzrjerry.github.io/assets/icon-round.ghOhcV8g.jpg
-    url: https://zhangzrjerry.github.io/me/about/
+    avatar: https://avatars.githubusercontent.com/u/87751816?v=4
+    url: https://zzhangje.vercel.app/
     bio: HKUST Engineering
     description: 睿神
     tags: [FRC8214, HKUST, Robotics Institute]
