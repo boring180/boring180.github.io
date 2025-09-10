@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FullCalendar Example</title>
+  <!-- FullCalendar CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+  <!-- FullCalendar JS -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+  <style>
+    #calendar {
+      max-width: 900px;
+      margin: 40px auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="calendar"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const calendarEl = document.getElementById('calendar');
+      const calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'timeGridWeek',
+        headerToolbar: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+        },
+        views: {
+          timeGridWeek: {
+            slotMinTime: '06:00:00',
+            slotMaxTime: '22:00:00',
+            slotDuration: '00:15:00',
+            slotLabelInterval: '01:00:00'
+          },
+          timeGridDay: {
+            slotMinTime: '06:00:00',
+            slotMaxTime: '22:00:00',
+            slotDuration: '00:15:00',
+            slotLabelInterval: '01:00:00'
+          }
+        },
+        allDaySlot: false,
+        nowIndicator: true,
+        height: 'auto',
+        events: [
+          // External iCloud calendar
+          {
+            url: 'webcal://p227-caldav.icloud.com.cn/published/2/MjUxNzk0MjQ1MzQyNTE3OXfm9jnRKjLfE3dtDFIY8wtZPhvBEPmt9Az4eOn4BVD37qIdNzifXZOaNE_qNSY2bExxJ3kRj_5TilkPbwi5txc',
+            color: '#007AFF',
+            textColor: 'white',
+            display: 'block'
+          }
+        ],
+        eventTimeFormat: {
+          hour: '2-digit',
+          minute: '2-digit',
+          hour12: false
+        },
+        eventClick: function(info) {
+          alert('Event: ' + info.event.title + '\n' +
+                'Start: ' + info.event.start.toLocaleString() + '\n' +
+                'End: ' + info.event.end.toLocaleString());
+        },
+        eventDidMount: function(info) {
+          // Add tooltip with detailed information
+          info.el.title = info.event.title + '\n' +
+                         'Start: ' + info.event.start.toLocaleString() + '\n' +
+                         'End: ' + info.event.end.toLocaleString();
+        }
+      });
+      calendar.render();
+    });
+  </script>
+</body>
+</html>

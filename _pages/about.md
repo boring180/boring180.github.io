@@ -8,18 +8,10 @@ profile:
   image: https://avatars.githubusercontent.com/u/53576007?v=4
   image_circular: true # crops the image to make it circular
 
-news: false # includes a list of news items
+news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-
-### **You can call me:**
-
-许博容
-
-Borong
-
-Bob
 
 ### **Facts about me:**
 
@@ -37,8 +29,6 @@ Long-distance relationship 🇭🇰🇦🇺
 
 Program of Computer Engineering
 
-> Move to [CV](https://boring180.github.io/cv/) page for more details
-
 ### **The person I want to be:**
 
 Innovator
@@ -54,6 +44,8 @@ Embodied AI
 Computer Vision
 
 Multimodal Large Language Models
+
+> Move to [CV](https://boring180.github.io/cv/) page for more details
 
 ### **What I take as a hobby:**
 

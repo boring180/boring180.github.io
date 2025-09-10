@@ -15,7 +15,13 @@ friends:
   - name: ZhangzrJerry
     avatar: https://avatars.githubusercontent.com/u/87751816?v=4
     url: https://zzhangje.vercel.app/
-    bio: HKUST Engineering
+    bio: HKUST Robotics Institute
     description: 睿神
     tags: [FRC8214, HKUST, Robotics Institute]
+  - name: Baixuan Xu 
+    avatar: https://tonyxu12138.github.io/assets/img/prof_pic.jpg?fccd3e0e845d9be976d02c8099156b6c
+    url: https://tonyxu12138.github.io/
+    bio: HKUST CSE
+    description: 🕶️🙂👍
+    tags: [HKUST, RDFZ]
 ---
