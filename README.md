@@ -28,12 +28,19 @@ npm run preview    # serves the built dist/ locally
 
 ## Deployment
 
-The site is a static bundle in `dist/` and can be deployed two ways:
+On every push to `main`/`master`, `.github/workflows/deploy.yml` builds the
+site and publishes the contents of `dist/` to the **`gh-pages`** branch. Both
+hosts serve those prebuilt files from that branch:
 
-- **GitHub Pages** — `.github/workflows/deploy.yml` builds on every push to
-  `main`/`master` and publishes `dist/` via GitHub Pages.
-- **Vercel** — `vercel.json` configures the Vite build command and `dist/`
-  output directory. Import the repo and deploy.
+- **Vercel** — set the Vercel project's production branch to `gh-pages`. The
+  prebuilt output includes a `vercel.json` (shipped from `public/`) that sets
+  `buildCommand: null` / `outputDirectory: "."`, so Vercel skips building and
+  serves the already-built files directly. Each push to `gh-pages` (i.e. after
+  the build Action runs) produces a Production deployment.
+- **GitHub Pages** — point GitHub Pages at the `gh-pages` branch (root).
+
+Note: edits flow from `main` through the Action; never commit to `gh-pages`
+directly.
 
 ## Editing content
 
