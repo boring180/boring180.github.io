@@ -1,5 +1,6 @@
 import {
   education,
+  friends,
   highlights,
   honors,
   languages,
@@ -14,6 +15,7 @@ const navItems = [
   { id: "skills", label: "Skills" },
   { id: "education", label: "Education" },
   { id: "honors", label: "Honors" },
+  { id: "friends", label: "Friends" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -193,13 +195,43 @@ export default function App() {
           </ul>
         </section>
 
+        <section id="friends" className="section">
+          <h2 className="section__title">
+            <span className="section__index">05</span> Friends
+          </h2>
+          <div className="friends">
+            {friends.map((f) => (
+              <a
+                className="friend"
+                key={f.name}
+                href={f.url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  className="friend__avatar"
+                  src={f.avatar}
+                  alt={f.name}
+                  width={56}
+                  height={56}
+                  loading="lazy"
+                />
+                <div className="friend__info">
+                  <h3 className="friend__name">{f.name}</h3>
+                  <p className="friend__bio">{f.bio}</p>
+                  <p className="friend__desc">{f.description}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+
         <section id="contact" className="section section--contact">
           <h2 className="section__title">
-            <span className="section__index">05</span> Contact
+            <span className="section__index">06</span> Contact
           </h2>
           <p className="contact__text">
-            Open to robotics and embodied intelligence opportunities. The best
-            way to reach me is by email.
+            Open to robotics and embodied intelligence opportunities.
           </p>
           <div className="contact__links">
             {socials.map((s) => (

@@ -487,6 +487,58 @@ main {
   color: var(--text-dim);
 }
 
+/* Friends */
+.friends {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.friend {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.friend:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.friend__avatar {
+  flex: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.friend__info {
+  min-width: 0;
+}
+
+.friend__name {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.friend__bio {
+  margin: 0.2rem 0 0;
+  font-size: 0.85rem;
+  color: var(--accent-2);
+}
+
+.friend__desc {
+  margin: 0.2rem 0 0;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}
+
 /* Contact */
 .section--contact {
   padding-bottom: clamp(4rem, 8vw, 6rem);

@@ -32,6 +32,14 @@ export type Honor = {
   awarder: string;
 };
 
+export type Friend = {
+  name: string;
+  avatar: string;
+  url: string;
+  bio: string;
+  description: string;
+};
+
 export type SocialLink = {
   label: string;
   href: string;
@@ -49,7 +57,7 @@ export const profile = {
   github: "https://github.com/boring180",
   linkedin: "https://www.linkedin.com/in/borong-xu-52829a293",
   summary:
-    "Research Assistant at the Shenzhen Loop Area Institute (SLAI) and a 2026 graduate of HKUST's Computer Engineering (CPEG) program. Passionate about robotics and embodied intelligence, with hands-on experience in C/C++, Python, and ROS. Eager to contribute to intelligent robot systems in real-world applications.",
+    "Research Assistant at the Shenzhen Loop Area Institute (SLAI) and a top 3% graduate of HKUST's Computer Engineering (CPEG) program. Passionate about robotics and embodied intelligence, with research experience spanning visual-inertial odometry, SLAM, multi-camera localization, and quadruped control, as well as deep learning, vision transformers, and LLM-based agent systems. Eager to push the boundaries of autonomous systems in real-world deployments.",
 };
 
 export const highlights = [
@@ -122,10 +130,14 @@ export const projects: Project[] = [
 ];
 
 export const skills: SkillGroup[] = [
-  { name: "C / C++", items: ["Eigen", "PCL", "STL"] },
+  { name: "C / C++", items: ["Eigen", "PCL", "STL", "STM32", "ESP32"] },
   { name: "Python", items: ["PyTorch", "OpenCV", "NumPy"] },
-  { name: "ROS", items: ["Navigation2", "Gazebo", "Slam Toolbox", "TF"] },
-  { name: "Domains", items: ["SLAM", "State Estimation", "Path Planning", "Embodied AI"] },
+  { name: "ROS / ROS2", items: ["Navigation2", "Gazebo", "Slam Toolbox", "TF"] },
+  { name: "Machine Learning", items: ["GLM", "SVM", "PCA", "XGBoost", "HMM", "Decision Trees"] },
+  { name: "Deep Learning", items: ["YOLO", "ViT", "RNN", "GAN", "VAE", "Diffusion Models", "LLM"] },
+  { name: "Robotics", items: ["SLAM", "VIO", "EKF", "ICP", "Path Planning", "Control Systems"] },
+  { name: "Hardware", items: ["Circuit Design", "Soldering", "STM32", "ESP32"] },
+  { name: "Fabrication", items: ["CAD", "3D Printing", "Laser Cutting", "Blender"] },
 ];
 
 export const education: EducationItem[] = [
@@ -169,6 +181,37 @@ export const honors: Honor[] = [
 export const languages = [
   { language: "English", fluency: "Fluent (IELTS 7.5)" },
   { language: "Mandarin", fluency: "Mother tongue" },
+];
+
+export const friends: Friend[] = [
+  {
+    name: "Leanne Ma",
+    avatar: "https://meowww9.github.io/assets/images/my-avatar.png",
+    url: "https://meowww9.github.io/",
+    bio: "UNSW Engineering",
+    description: "My only one",
+  },
+  {
+    name: "ZhangzrJerry",
+    avatar: "https://avatars.githubusercontent.com/u/87751816?v=4",
+    url: "https://zzhangje.vercel.app/",
+    bio: "HKUST Robotics Institute",
+    description: "睿神",
+  },
+  {
+    name: "Yi Zhang",
+    avatar: "https://zhangone-smile.github.io/profile.jpg",
+    url: "https://zhangone-smile.github.io/",
+    bio: "HKUST UAV Group",
+    description: "",
+  },
+  {
+    name: "Baixuan Xu",
+    avatar: "https://tonyxu12138.github.io/assets/img/prof_pic.jpg?fccd3e0e845d9be976d02c8099156b6c",
+    url: "https://tonyxu12138.github.io/",
+    bio: "HKUST CSE",
+    description: "🕶️🙂👍",
+  },
 ];
 
 export const socials: SocialLink[] = [
