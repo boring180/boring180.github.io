@@ -194,7 +194,7 @@ export const friends: Friend[] = [
   {
     name: "ZhangzrJerry",
     avatar: "https://avatars.githubusercontent.com/u/87751816?v=4",
-    url: "https://zzhangje.vercel.app/",
+    url: "https://zhangzrjerry.github.io/",
     bio: "HKUST Robotics Institute",
     description: "睿神",
   },
