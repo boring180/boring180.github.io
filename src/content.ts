@@ -80,8 +80,8 @@ export const projects: Project[] = [
     period: "Mar 2026 - Present",
     supervisor: "Prof. Ziqi Wang",
     description:
-      "Building a pipeline that automatically generates step-by-step assembly trees for LEGO models: parsing visual assembly manuals into step graphs, then learning a repeat-aware perception policy over a LoRA-adapted DINOv2 backbone to decompose a target model into per-step part subsets, combined with search-based planning.",
-    tags: ["Computer Vision", "DINOv2", "Structured Prediction", "Assembly Planning", "PyTorch"],
+      "Research on the automatic understanding of LEGO assembly, combining computer vision and planning to recover step-by-step assembly structure from visual instructions and 3D models.",
+    tags: ["Computer Vision", "Deep Learning", "Assembly Planning", "PyTorch"],
   },
   {
     title: "LLM Agent Development",
