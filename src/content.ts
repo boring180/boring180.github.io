@@ -75,6 +75,15 @@ export const highlights = [
 
 export const projects: Project[] = [
   {
+    title: "LEGO Assembly Understanding",
+    role: "Ongoing Research Project, jointly run by HKUST and SLAI",
+    period: "Mar 2026 - Present",
+    supervisor: "Prof. Ziqi Wang",
+    description:
+      "Building a pipeline that automatically generates step-by-step assembly trees for LEGO models: parsing visual assembly manuals into step graphs, then learning a repeat-aware perception policy over a LoRA-adapted DINOv2 backbone to decompose a target model into per-step part subsets, combined with search-based planning.",
+    tags: ["Computer Vision", "DINOv2", "Structured Prediction", "Assembly Planning", "PyTorch"],
+  },
+  {
     title: "LLM Agent Development",
     role: "Undergraduate Research Opportunity (UROP)",
     period: "Jun 2024 - May 2026",
@@ -145,9 +154,9 @@ export const education: EducationItem[] = [
     institution: "The Hong Kong University of Science and Technology (HKUST)",
     location: "Hong Kong SAR",
     degree: "Bachelor of Engineering in Computer Engineering",
-    period: "Graduated June 2026",
+    period: "Graduated Jun 2026",
     details: [
-      "GPA 3.84/4.3 (Top 3% among 150 students)",
+      "GPA 3.84/4.3 (Top 3% among 157 students)",
       "Major GPA 4.03/4.3",
     ],
   },
@@ -155,7 +164,7 @@ export const education: EducationItem[] = [
     institution: "High School Affiliated to Renmin University of China (RDFZ)",
     location: "Beijing, China",
     degree: "High School Diploma (Gaokao)",
-    period: "Graduated June 2022",
+    period: "Graduated Jun 2022",
     details: [
       "FIRST Robotics Club, Chief Engineer (2021 season)",
       "FIRST Robotics Club, Alumni Mentor (2022-2024 seasons)",
