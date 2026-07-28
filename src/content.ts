@@ -153,7 +153,7 @@ export const education: EducationItem[] = [
   {
     institution: "The Hong Kong University of Science and Technology (HKUST)",
     location: "Hong Kong SAR",
-    degree: "Bachelor of Engineering in Computer Engineering",
+    degree: "Bachelor of Engineering in Computer Engineering, First Class Honors",
     period: "Graduated Jun 2026",
     details: [
       "GPA 3.84/4.3 (Top 3% among 157 students)",
