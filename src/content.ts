@@ -52,8 +52,7 @@ export const profile = {
   email: "borongxu@outlook.com",
   website: "https://boring180.github.io/",
   cv: "https://boring180.github.io/CV/cv.pdf",
-  photo:
-    "https://media.licdn.com/dms/image/v2/D5603AQHM_mKavZKgHQ/profile-displayphoto-scale_400_400/B56Z7qlgq4H4Ag-/0/1782052164133?e=1783555200&v=beta&t=Px-TGO19ThqUlDtwPkIJBdU2mYdL783ORLUGHZsg_S4",
+  photo: "/avatar.jpg",
   github: "https://github.com/boring180",
   linkedin: "https://www.linkedin.com/in/borong-xu-52829a293",
   summary:
