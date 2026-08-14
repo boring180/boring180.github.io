@@ -26,6 +26,14 @@ export type EducationItem = {
   details: string[];
 };
 
+export type ExperienceItem = {
+  organization: string;
+  location: string;
+  role: string;
+  period: string;
+  details: string[];
+};
+
 export type Honor = {
   year: string;
   title: string;
@@ -56,14 +64,14 @@ export const profile = {
   github: "https://github.com/boring180",
   linkedin: "https://www.linkedin.com/in/borong-xu-52829a293",
   summary:
-    "Research Assistant at the Shenzhen Loop Area Institute (SLAI) and a top 3% graduate of HKUST's Computer Engineering (CPEG) program. Passionate about robotics and embodied intelligence, with research experience spanning visual-inertial odometry, SLAM, multi-camera localization, and quadruped control, as well as deep learning, vision transformers, and LLM-based agent systems. Eager to push the boundaries of autonomous systems in real-world deployments.",
+    "Research Assistant at the Shenzhen Loop Area Institute (SLAI) and a graduate of HKUST's Computer Engineering (CPEG) program, ranked 1st of 98 by major GPA. Passionate about robotics and embodied intelligence, with research experience spanning visual-inertial odometry, SLAM, multi-camera localization, and quadruped control, as well as deep learning and LLM-based agent systems. Eager to push the boundaries of autonomous systems in real-world deployments.",
 };
 
 export const highlights = [
   {
-    value: "Top 3%",
+    value: "1 / 98",
     label:
-      "Ranked in the top 3% of 157 students in the HKUST Computer Engineering program, graduating in 2026.",
+      "Ranked 1st of 98 students by major GPA in the HKUST Computer Engineering program.",
   },
   {
     value: "4.03 / 4.3",
@@ -75,7 +83,7 @@ export const highlights = [
 export const projects: Project[] = [
   {
     title: "LEGO Assembly Understanding",
-    role: "Ongoing Research Project, jointly run by HKUST and SLAI",
+    role: "Ongoing Research Project, jointly supervised by HKUST RFL and SLAI",
     period: "Mar 2026 - Present",
     supervisor: "Prof. Ziqi Wang",
     description:
@@ -84,7 +92,7 @@ export const projects: Project[] = [
   },
   {
     title: "LLM Agent Development",
-    role: "Undergraduate Research Opportunity (UROP)",
+    role: "Undergraduate Research Opportunity (UROP), HKUST",
     period: "Jun 2024 - May 2026",
     supervisor: "Prof. Shenghui Song",
     description:
@@ -96,7 +104,7 @@ export const projects: Project[] = [
   },
   {
     title: "Introduction to Aerial Robotics (ELEC5660)",
-    role: "Course Project",
+    role: "Course Project, HKUST",
     period: "Feb 2026 - May 2026",
     supervisor: "Prof. Shaojie Shen",
     description:
@@ -110,7 +118,7 @@ export const projects: Project[] = [
   },
   {
     title: "Quadruped Robot Control",
-    role: "Research Practicum",
+    role: "Research Practicum, UNSW Sydney",
     period: "Feb 2025 - Aug 2025",
     supervisor: "Prof. Maurice Pagnucco & Prof. Yang Song",
     description:
@@ -125,11 +133,11 @@ export const projects: Project[] = [
   },
   {
     title: "Underwater Localization System",
-    role: "Final Year Project",
+    role: "Final Year Project, HKUST",
     period: "Jun 2025 - May 2026",
     supervisor: "Prof. Huan Yin & Prof. Fumin Zhang",
     description:
-      "Developed a multi-camera vision-based localization system for tracking multiple Autonomous Underwater Vehicles, improving positioning accuracy to within 10cm in a 1m x 1m range under complex lighting.",
+      "Developed a multi-camera vision-based localization system for tracking multiple Autonomous Underwater Vehicles (AUVs). Reduced localization error in complex underwater lighting scenarios, improving positioning accuracy to within 10cm in a 1m × 1m range.",
     tags: ["Computer Vision", "Localization", "Multi-Camera", "AUV"],
     links: [
       { label: "MASEP_Local", href: "https://github.com/boring180/MASEP_Local" },
@@ -141,11 +149,10 @@ export const skills: SkillGroup[] = [
   { name: "C / C++", items: ["Eigen", "PCL", "STL", "STM32", "ESP32"] },
   { name: "Python", items: ["PyTorch", "OpenCV", "NumPy"] },
   { name: "ROS / ROS2", items: ["Navigation2", "Gazebo", "Slam Toolbox", "TF"] },
-  { name: "Machine Learning", items: ["GLM", "SVM", "PCA", "XGBoost", "HMM", "Decision Trees"] },
-  { name: "Deep Learning", items: ["YOLO", "ViT", "RNN", "GAN", "VAE", "Diffusion Models", "LLM"] },
-  { name: "Robotics", items: ["SLAM", "VIO", "EKF", "ICP", "Path Planning", "Control Systems"] },
-  { name: "Hardware", items: ["Circuit Design", "Soldering", "STM32", "ESP32"] },
-  { name: "Fabrication", items: ["CAD", "3D Printing", "Laser Cutting", "Blender"] },
+  { name: "Robotics", items: ["SLAM", "VIO", "EKF", "ICP", "Path Planning", "Control"] },
+  { name: "Deep Learning", items: ["YOLO", "ViT", "RNN", "GAN", "VAE", "Diffusion", "LLM"] },
+  { name: "Machine Learning", items: ["GLM", "SVM", "PCA", "XGBoost", "HMM"] },
+  { name: "Hardware", items: ["Circuit Design", "Soldering", "CAD", "3D Printing"] },
 ];
 
 export const education: EducationItem[] = [
@@ -155,9 +162,16 @@ export const education: EducationItem[] = [
     degree: "Bachelor of Engineering in Computer Engineering, First Class Honors",
     period: "Graduated Jun 2026",
     details: [
-      "GPA 3.84/4.3 (Top 3% among 157 students)",
-      "Major GPA 4.03/4.3",
+      "GPA 3.84/4.3",
+      "Major GPA 4.03/4.3 (Ranked 1/98 in program)",
     ],
+  },
+  {
+    institution: "University of New South Wales (UNSW Sydney)",
+    location: "Sydney, Australia",
+    degree: "Visiting Student, Computer Science and Engineering",
+    period: "Feb 2025 - May 2025",
+    details: [],
   },
   {
     institution: "High School Affiliated to Renmin University of China (RDFZ)",
@@ -168,6 +182,16 @@ export const education: EducationItem[] = [
       "FIRST Robotics Club, Chief Engineer (2021 season)",
       "FIRST Robotics Club, Alumni Mentor (2022-2024 seasons)",
     ],
+  },
+];
+
+export const experience: ExperienceItem[] = [
+  {
+    organization: "Shenzhen Loop Area Institute (SLAI)",
+    location: "Shenzhen, China",
+    role: "Research Assistant",
+    period: "Jun 2026 - Present",
+    details: ["Research on robotics and embodied intelligence."],
   },
 ];
 

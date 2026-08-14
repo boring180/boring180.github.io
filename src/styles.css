@@ -1,12 +1,12 @@
 :root {
-  --bg: #08111f;
-  --bg-elev: #0e1b2e;
-  --bg-card: #11233a;
-  --border: #1d324f;
-  --text: #e6edf6;
-  --text-dim: #9fb2c8;
-  --accent: #38e1c4;
-  --accent-2: #5aa9ff;
+  --bg: #141413;
+  --bg-elev: #1c1b1a;
+  --bg-card: #232120;
+  --border: #383531;
+  --text: #f5f4ef;
+  --text-dim: #b3aea4;
+  --accent: #d97757;
+  --accent-2: #e8a184;
   --radius: 14px;
   --maxw: 980px;
   font-synthesis: none;
@@ -48,7 +48,7 @@ a {
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem clamp(1rem, 5vw, 3rem);
-  background: rgba(8, 17, 31, 0.78);
+  background: rgba(20, 20, 19, 0.78);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
@@ -134,7 +134,7 @@ main {
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--accent);
-  box-shadow: 0 0 0 5px rgba(56, 225, 196, 0.12);
+  box-shadow: 0 0 0 5px rgba(217, 119, 87, 0.16);
 }
 
 .hero__eyebrow {
@@ -149,7 +149,7 @@ main {
   font-size: clamp(2.5rem, 8vw, 4.5rem);
   line-height: 1.02;
   margin: 0;
-  background: linear-gradient(120deg, var(--text), var(--accent-2));
+  background: linear-gradient(120deg, var(--text), var(--accent));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -190,7 +190,7 @@ main {
 
 .btn--primary {
   background: var(--accent);
-  color: #052019;
+  color: #20110b;
 }
 
 .btn--ghost {
@@ -330,8 +330,8 @@ main {
   font-size: 0.76rem;
   font-family: ui-monospace, monospace;
   color: var(--accent-2);
-  background: rgba(90, 169, 255, 0.1);
-  border: 1px solid rgba(90, 169, 255, 0.25);
+  background: rgba(232, 161, 132, 0.12);
+  border: 1px solid rgba(232, 161, 132, 0.28);
   border-radius: 6px;
   padding: 0.2rem 0.5rem;
 }
@@ -413,7 +413,7 @@ main {
   margin-top: 0.5rem;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 0 4px rgba(56, 225, 196, 0.15);
+  box-shadow: 0 0 0 4px rgba(217, 119, 87, 0.16);
 }
 
 .timeline__body {

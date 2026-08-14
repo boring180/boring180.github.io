@@ -1,5 +1,6 @@
 import {
   education,
+  experience,
   friends,
   highlights,
   honors,
@@ -14,6 +15,7 @@ const navItems = [
   { id: "projects", label: "Projects" },
   { id: "skills", label: "Skills" },
   { id: "education", label: "Education" },
+  { id: "experience", label: "Experience" },
   { id: "honors", label: "Honors" },
   { id: "friends", label: "Friends" },
   { id: "contact", label: "Contact" },
@@ -180,9 +182,36 @@ export default function App() {
           </div>
         </section>
 
+        <section id="experience" className="section">
+          <h2 className="section__title">
+            <span className="section__index">04</span> Experience
+          </h2>
+          <div className="timeline">
+            {experience.map((e) => (
+              <article className="timeline__item" key={e.organization}>
+                <div className="timeline__marker" aria-hidden="true" />
+                <div className="timeline__body">
+                  <div className="timeline__head">
+                    <h3>{e.organization}</h3>
+                    <span className="timeline__period">{e.period}</span>
+                  </div>
+                  <p className="timeline__meta">
+                    {e.role} · {e.location}
+                  </p>
+                  <ul>
+                    {e.details.map((d) => (
+                      <li key={d}>{d}</li>
+                    ))}
+                  </ul>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section id="honors" className="section">
           <h2 className="section__title">
-            <span className="section__index">04</span> Honors
+            <span className="section__index">05</span> Honors
           </h2>
           <ul className="honors">
             {honors.map((h) => (
@@ -197,7 +226,7 @@ export default function App() {
 
         <section id="friends" className="section">
           <h2 className="section__title">
-            <span className="section__index">05</span> Friends
+            <span className="section__index">06</span> Friends
           </h2>
           <div className="friends">
             {friends.map((f) => (
@@ -228,7 +257,7 @@ export default function App() {
 
         <section id="contact" className="section section--contact">
           <h2 className="section__title">
-            <span className="section__index">06</span> Contact
+            <span className="section__index">07</span> Contact
           </h2>
           <p className="contact__text">
             Open to robotics and embodied intelligence opportunities.
