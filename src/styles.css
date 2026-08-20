@@ -451,6 +451,27 @@ main {
   font-size: 0.92rem;
 }
 
+/* Figure */
+.figure {
+  max-width: 600px;
+  margin: 1.75rem auto 0;
+}
+
+.figure__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.figure__caption {
+  margin-top: 0.6rem;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
 /* Honors */
 .honors {
   list-style: none;

@@ -1,4 +1,5 @@
 import {
+  degreeFigure,
   education,
   experience,
   friends,
@@ -180,6 +181,19 @@ export default function App() {
               </article>
             ))}
           </div>
+          <figure className="figure">
+            <img
+              className="figure__img"
+              src={degreeFigure.src}
+              alt={degreeFigure.alt}
+              width={degreeFigure.width}
+              height={degreeFigure.height}
+              loading="lazy"
+            />
+            <figcaption className="figure__caption">
+              {degreeFigure.caption}
+            </figcaption>
+          </figure>
         </section>
 
         <section id="experience" className="section">

@@ -155,6 +155,15 @@ export const skills: SkillGroup[] = [
   { name: "Hardware", items: ["Circuit Design", "Soldering", "CAD", "3D Printing"] },
 ];
 
+export const degreeFigure = {
+  src: "/great-kid.jpg",
+  width: 1200,
+  height: 594,
+  alt:
+    "Film still of Tony Stark showing a hologram of Borong Xu in graduation gown, subtitled \"He's a great kid. Computer engineering degree.\"",
+  caption: "Computer engineering degree, HKUST class of 2026.",
+};
+
 export const education: EducationItem[] = [
   {
     institution: "The Hong Kong University of Science and Technology (HKUST)",
