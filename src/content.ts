@@ -71,6 +71,8 @@ export type ResourceLink = {
   /** Official HKUST course title, per locale. Held on the shared link list
    *  rather than duplicated per locale, so the two can never drift apart. */
   course?: Record<Lang, string>;
+  /** Marks a file that is not the main notes, e.g. an exam cheat sheet. */
+  kind?: Record<Lang, string>;
 };
 
 export type ResourceGroup = {
@@ -146,8 +148,9 @@ export const navOrder: NavId[] = [
 // shared by both locales to keep the two link lists from drifting apart.
 const pdfLinks: ResourceLink[] = [
   {
-    label: "PHYS 1003CS",
+    label: "PHYS 1003",
     href: "https://github.com/boring180/Notes/blob/main/PHYS%201003CS.pdf",
+    kind: { en: "Cheat sheet", zh: "开卷资料" },
     course: { en: "Energy and Related Environmental Issues", zh: "能源与相关环境问题" },
   },
   {
@@ -171,13 +174,14 @@ const pdfLinks: ResourceLink[] = [
     course: { en: "Design and Analysis of Algorithms", zh: "算法设计与分析" },
   },
   {
-    label: "COMP5212 notes",
+    label: "COMP 5212",
     href: "https://github.com/boring180/Notes/blob/main/COMP5212%20notes.pdf",
     course: { en: "Machine Learning", zh: "机器学习" },
   },
   {
-    label: "COMP5212 CS",
+    label: "COMP 5212",
     href: "https://github.com/boring180/Notes/blob/main/COMP5212%20CS.pdf",
+    kind: { en: "Cheat sheet", zh: "开卷资料" },
     course: { en: "Machine Learning", zh: "机器学习" },
   },
 ];

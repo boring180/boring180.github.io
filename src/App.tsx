@@ -325,7 +325,14 @@ export default function App() {
                   {group.links.map((link) => (
                     <li key={link.href}>
                       <a href={link.href} target="_blank" rel="noreferrer">
-                        <span className="resource__code">{link.label}</span>
+                        <span className="resource__code">
+                          {link.label}
+                          {link.kind && (
+                            <span className="resource__kind">
+                              {link.kind[lang]}
+                            </span>
+                          )}
+                        </span>
                         {link.course && (
                           <span className="resource__course">
                             {link.course[lang]}

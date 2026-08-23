@@ -680,6 +680,20 @@ main {
   color: var(--text);
 }
 
+.resource__kind {
+  margin-left: 0.45rem;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--accent-2);
+  background: rgba(232, 161, 132, 0.12);
+  border: 1px solid rgba(232, 161, 132, 0.28);
+  border-radius: 4px;
+  padding: 0.1rem 0.35rem;
+  vertical-align: 0.05em;
+  white-space: nowrap;
+}
+
 .resource__course {
   display: block;
   margin-top: 0.1rem;
