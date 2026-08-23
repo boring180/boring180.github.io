@@ -45,7 +45,8 @@ jobs:
           # appears on the command line or in the run log.
           OSS_ACCESS_KEY_ID: ${{ secrets.OSS_ACCESS_KEY_ID }}
           OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
-          OSS_REGION: ${{ vars.OSS_REGION }}
+          # Region IDs carry no 'oss-' prefix: cn-hongkong, not oss-cn-hongkong.
+          OSS_REGION: ${{ vars.OSS_REGION || 'cn-hongkong' }}
           BUCKET: ${{ vars.OSS_BUCKET }}
         run: |
           set -euo pipefail
@@ -58,7 +59,8 @@ jobs:
         env:
           OSS_ACCESS_KEY_ID: ${{ secrets.OSS_ACCESS_KEY_ID }}
           OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
-          OSS_REGION: ${{ vars.OSS_REGION }}
+          # Region IDs carry no 'oss-' prefix: cn-hongkong, not oss-cn-hongkong.
+          OSS_REGION: ${{ vars.OSS_REGION || 'cn-hongkong' }}
           BUCKET: ${{ vars.OSS_BUCKET }}
         run: |
           set -euo pipefail
