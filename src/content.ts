@@ -48,6 +48,18 @@ export type Friend = {
   description: string;
 };
 
+export type ResourceLink = {
+  label: string;
+  href: string;
+};
+
+export type ResourceGroup = {
+  name: string;
+  description: string;
+  source?: ResourceLink;
+  links: ResourceLink[];
+};
+
 export type SocialLink = {
   label: string;
   href: string;
@@ -252,6 +264,74 @@ export const friends: Friend[] = [
     url: "https://tonyxu12138.github.io/",
     bio: "HKUST CSE",
     description: "🕶️🙂👍",
+  },
+];
+
+export const resources: ResourceGroup[] = [
+  {
+    name: "Handwritten Notes",
+    description:
+      "Scanned handwritten notes from my HKUST coursework, kept on GitHub so the files stay reachable.",
+    source: {
+      label: "boring180/Notes",
+      href: "https://github.com/boring180/Notes",
+    },
+    links: [
+      {
+        label: "PHYS 1003CS",
+        href: "https://github.com/boring180/Notes/blob/main/PHYS%201003CS.pdf",
+      },
+      {
+        label: "COMP 2211",
+        href: "https://github.com/boring180/Notes/blob/main/COMP%202211.pdf",
+      },
+      {
+        label: "COMP 2611",
+        href: "https://github.com/boring180/Notes/blob/main/COMP%202611.pdf",
+      },
+      {
+        label: "COMP 2711",
+        href: "https://github.com/boring180/Notes/blob/main/COMP%202711.pdf",
+      },
+      {
+        label: "COMP 3711",
+        href: "https://github.com/boring180/Notes/blob/main/COMP%203711.pdf",
+      },
+      {
+        label: "COMP5212 notes",
+        href: "https://github.com/boring180/Notes/blob/main/COMP5212%20notes.pdf",
+      },
+      {
+        label: "COMP5212 CS",
+        href: "https://github.com/boring180/Notes/blob/main/COMP5212%20CS.pdf",
+      },
+    ],
+  },
+  {
+    name: "Notion Notes",
+    description: "Typed course notes published as public Notion pages.",
+    source: {
+      label: "borongxu.notion.site",
+      href: "https://borongxu.notion.site/",
+    },
+    links: [
+      {
+        label: "COMP 2011",
+        href: "https://borongxu.notion.site/Notes-39caa8bace414374a3eb7952aade134d",
+      },
+      {
+        label: "COMP 2012",
+        href: "https://borongxu.notion.site/Notes-81ec774891134e2f8e32b933ec3ce98c",
+      },
+      {
+        label: "COMP 2611 (MIPS part)",
+        href: "https://borongxu.notion.site/MIPS-notes-bca2f6ed46b141458c9ec8bc251a2b20",
+      },
+      {
+        label: "ISDN 2601",
+        href: "https://borongxu.notion.site/ISDN-2601-4b8d3a379c1a434283f7b69c4c9d93fa",
+      },
+    ],
   },
 ];
 

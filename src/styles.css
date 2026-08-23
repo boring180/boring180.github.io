@@ -96,6 +96,12 @@ main {
   font-family: "SFMono-Regular", ui-monospace, monospace;
 }
 
+.section__lead {
+  max-width: 60ch;
+  margin: -1rem 0 1.75rem;
+  color: var(--text-dim);
+}
+
 /* Hero */
 .hero {
   position: relative;
@@ -558,6 +564,79 @@ main {
   margin: 0.2rem 0 0;
   font-size: 0.82rem;
   color: var(--text-dim);
+}
+
+/* Resources */
+.resources {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.resource {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+}
+
+.resource__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.resource__name {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--accent);
+}
+
+.resource__source {
+  font-size: 0.8rem;
+  font-family: ui-monospace, monospace;
+  color: var(--text-dim);
+}
+
+.resource__source:hover {
+  color: var(--accent-2);
+  text-decoration: underline;
+}
+
+.resource__desc {
+  margin: 0.5rem 0 0;
+  font-size: 0.88rem;
+  color: var(--text-dim);
+}
+
+.resource__links {
+  list-style: none;
+  margin: 0.9rem 0 0;
+  padding: 0.9rem 0 0;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.resource__links a {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.25rem 0.6rem;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.resource__links a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 /* Contact */

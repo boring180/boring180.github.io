@@ -8,6 +8,7 @@ import {
   languages,
   profile,
   projects,
+  resources,
   skills,
   socials,
 } from "./content";
@@ -19,6 +20,7 @@ const navItems = [
   { id: "experience", label: "Experience" },
   { id: "honors", label: "Honors" },
   { id: "friends", label: "Friends" },
+  { id: "resources", label: "Resources" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -269,9 +271,49 @@ export default function App() {
           </div>
         </section>
 
+        <section id="resources" className="section">
+          <h2 className="section__title">
+            <span className="section__index">07</span> Resources
+          </h2>
+          <p className="section__lead">
+            Course notes from my HKUST coursework, shared for anyone taking the
+            same classes.
+          </p>
+          <div className="resources">
+            {resources.map((group) => (
+              <article className="resource" key={group.name}>
+                <div className="resource__head">
+                  <h3 className="resource__name">{group.name}</h3>
+                  {group.source && (
+                    <a
+                      className="resource__source"
+                      href={group.source.href}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {group.source.label}
+                      <span aria-hidden="true"> ↗</span>
+                    </a>
+                  )}
+                </div>
+                <p className="resource__desc">{group.description}</p>
+                <ul className="resource__links">
+                  {group.links.map((link) => (
+                    <li key={link.href}>
+                      <a href={link.href} target="_blank" rel="noreferrer">
+                        {link.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section id="contact" className="section section--contact">
           <h2 className="section__title">
-            <span className="section__index">07</span> Contact
+            <span className="section__index">08</span> Contact
           </h2>
           <p className="contact__text">
             Open to robotics and embodied intelligence opportunities.
