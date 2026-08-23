@@ -310,26 +310,42 @@ export const resources: ResourceGroup[] = [
   {
     name: "Notion Notes",
     description: "Typed course notes published as public Notion pages.",
-    source: {
-      label: "borongxu.notion.site",
-      href: "https://borongxu.notion.site/",
-    },
     links: [
       {
         label: "COMP 2011",
-        href: "https://borongxu.notion.site/Notes-39caa8bace414374a3eb7952aade134d",
+        href: "https://boring180.notion.site/Notes-39caa8bace414374a3eb7952aade134d",
       },
       {
         label: "COMP 2012",
-        href: "https://borongxu.notion.site/Notes-81ec774891134e2f8e32b933ec3ce98c",
+        href: "https://boring180.notion.site/Notes-81ec774891134e2f8e32b933ec3ce98c",
       },
       {
         label: "COMP 2611 (MIPS part)",
-        href: "https://borongxu.notion.site/MIPS-notes-bca2f6ed46b141458c9ec8bc251a2b20",
+        href: "https://boring180.notion.site/MIPS-notes-bca2f6ed46b141458c9ec8bc251a2b20",
+      },
+      {
+        label: "ELEC 1200",
+        href: "https://boring180.notion.site/ELEC-1200-269e3093facc80839d58fa374645eac6",
+      },
+      {
+        label: "ELEC 2100",
+        href: "https://boring180.notion.site/ELEC-2100-269e3093facc80e99733c092b7bbbca7",
+      },
+      {
+        label: "ELEC 3300",
+        href: "https://boring180.notion.site/ELEC-3300-269e3093facc80a9918de4a34f29f42c",
+      },
+      {
+        label: "ELEC 4320",
+        href: "https://boring180.notion.site/ELEC-4320-269e3093facc80cc8d83c73622deaa33",
+      },
+      {
+        label: "ELEC 5660",
+        href: "https://boring180.notion.site/ELEC5660-2fce3093facc80618de3c02e3babbdc9",
       },
       {
         label: "ISDN 2601",
-        href: "https://borongxu.notion.site/ISDN-2601-4b8d3a379c1a434283f7b69c4c9d93fa",
+        href: "https://boring180.notion.site/ISDN-2601-4b8d3a379c1a434283f7b69c4c9d93fa",
       },
     ],
   },
