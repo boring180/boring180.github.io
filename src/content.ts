@@ -68,9 +68,9 @@ export type SocialLink = {
 export type ResourceLink = {
   label: string;
   href: string;
-  /** Official HKUST course title. Left English in both locales, since that is
-   *  how the courses are named and taught. */
-  course?: string;
+  /** Official HKUST course title, per locale. Held on the shared link list
+   *  rather than duplicated per locale, so the two can never drift apart. */
+  course?: Record<Lang, string>;
 };
 
 export type ResourceGroup = {
@@ -148,37 +148,37 @@ const pdfLinks: ResourceLink[] = [
   {
     label: "PHYS 1003CS",
     href: "https://github.com/boring180/Notes/blob/main/PHYS%201003CS.pdf",
-    course: "Energy and Related Environmental Issues",
+    course: { en: "Energy and Related Environmental Issues", zh: "能源与相关环境问题" },
   },
   {
     label: "COMP 2211",
     href: "https://github.com/boring180/Notes/blob/main/COMP%202211.pdf",
-    course: "Introduction to Artificial Intelligence",
+    course: { en: "Introduction to Artificial Intelligence", zh: "人工智能导论" },
   },
   {
     label: "COMP 2611",
     href: "https://github.com/boring180/Notes/blob/main/COMP%202611.pdf",
-    course: "Computer Organization",
+    course: { en: "Computer Organization", zh: "计算机组成原理" },
   },
   {
     label: "COMP 2711",
     href: "https://github.com/boring180/Notes/blob/main/COMP%202711.pdf",
-    course: "Discrete Mathematical Tools for Computer Science",
+    course: { en: "Discrete Mathematical Tools for Computer Science", zh: "面向计算机科学的离散数学" },
   },
   {
     label: "COMP 3711",
     href: "https://github.com/boring180/Notes/blob/main/COMP%203711.pdf",
-    course: "Design and Analysis of Algorithms",
+    course: { en: "Design and Analysis of Algorithms", zh: "算法设计与分析" },
   },
   {
     label: "COMP5212 notes",
     href: "https://github.com/boring180/Notes/blob/main/COMP5212%20notes.pdf",
-    course: "Machine Learning",
+    course: { en: "Machine Learning", zh: "机器学习" },
   },
   {
     label: "COMP5212 CS",
     href: "https://github.com/boring180/Notes/blob/main/COMP5212%20CS.pdf",
-    course: "Machine Learning",
+    course: { en: "Machine Learning", zh: "机器学习" },
   },
 ];
 
@@ -186,47 +186,47 @@ const notionLinks: ResourceLink[] = [
   {
     label: "COMP 2011",
     href: "https://boring180.notion.site/Notes-39caa8bace414374a3eb7952aade134d",
-    course: "Programming with C++",
+    course: { en: "Programming with C++", zh: "C++ 程序设计" },
   },
   {
     label: "COMP 2012",
     href: "https://boring180.notion.site/Notes-81ec774891134e2f8e32b933ec3ce98c",
-    course: "Object-Oriented Programming and Data Structures",
+    course: { en: "Object-Oriented Programming and Data Structures", zh: "面向对象程序设计与数据结构" },
   },
   {
     label: "COMP 2611 (MIPS part)",
     href: "https://boring180.notion.site/MIPS-notes-bca2f6ed46b141458c9ec8bc251a2b20",
-    course: "Computer Organization",
+    course: { en: "Computer Organization", zh: "计算机组成原理" },
   },
   {
     label: "ELEC 1200",
     href: "https://boring180.notion.site/ELEC-1200-269e3093facc80839d58fa374645eac6",
-    course: "A System View of Communications: from Signals to Packets",
+    course: { en: "A System View of Communications: from Signals to Packets", zh: "通信系统概览：从信号到数据包" },
   },
   {
     label: "ELEC 2100",
     href: "https://boring180.notion.site/ELEC-2100-269e3093facc80e99733c092b7bbbca7",
-    course: "Signals and Systems",
+    course: { en: "Signals and Systems", zh: "信号与系统" },
   },
   {
     label: "ELEC 3300",
     href: "https://boring180.notion.site/ELEC-3300-269e3093facc80a9918de4a34f29f42c",
-    course: "Introduction to Embedded Systems",
+    course: { en: "Introduction to Embedded Systems", zh: "嵌入式系统导论" },
   },
   {
     label: "ELEC 4320",
     href: "https://boring180.notion.site/ELEC-4320-269e3093facc80cc8d83c73622deaa33",
-    course: "FPGA-based Design: From Theory to Practice",
+    course: { en: "FPGA-based Design: From Theory to Practice", zh: "基于 FPGA 的设计：从理论到实践" },
   },
   {
     label: "ELEC 5660",
     href: "https://boring180.notion.site/ELEC5660-2fce3093facc80618de3c02e3babbdc9",
-    course: "Introduction to Aerial Robotics",
+    course: { en: "Introduction to Aerial Robotics", zh: "空中机器人导论" },
   },
   {
     label: "ISDN 2601",
     href: "https://boring180.notion.site/ISDN-2601-4b8d3a379c1a434283f7b69c4c9d93fa",
-    course: "Exploring the World through Smart Mechatronics",
+    course: { en: "Exploring the World through Smart Mechatronics", zh: "智能机电系统探索" },
   },
 ];
 

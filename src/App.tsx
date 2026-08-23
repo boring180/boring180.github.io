@@ -327,7 +327,9 @@ export default function App() {
                       <a href={link.href} target="_blank" rel="noreferrer">
                         <span className="resource__code">{link.label}</span>
                         {link.course && (
-                          <span className="resource__course">{link.course}</span>
+                          <span className="resource__course">
+                            {link.course[lang]}
+                          </span>
                         )}
                       </a>
                     </li>
