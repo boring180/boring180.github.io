@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>404 | Borong Xu</title>
+    <style>
+      :root {
+        --bg: #141413;
+        --bg-card: #232120;
+        --border: #383531;
+        --text: #f5f4ef;
+        --text-dim: #b3aea4;
+        --accent: #d97757;
+        --accent-2: #e8a184;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        background: var(--bg);
+        color: var(--text);
+        font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+          "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+          "Noto Sans CJK SC", sans-serif;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      .card { max-width: 32rem; text-align: center; }
+      .code {
+        font-family: "SFMono-Regular", ui-monospace, monospace;
+        font-size: clamp(3.5rem, 14vw, 6rem);
+        font-weight: 700;
+        line-height: 1;
+        margin: 0;
+        color: var(--accent);
+      }
+      h1 { font-size: clamp(1.25rem, 4vw, 1.6rem); margin: 1rem 0 0.5rem; }
+      p { margin: 0 0 1.75rem; color: var(--text-dim); }
+      .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+      a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 0.92rem;
+        font-weight: 600;
+        border-radius: 999px;
+        padding: 0.6rem 1.2rem;
+        border: 1px solid var(--border);
+        color: var(--text);
+        background: var(--bg-card);
+        transition: border-color 0.15s ease, color 0.15s ease;
+      }
+      a.primary { background: var(--accent); border-color: var(--accent); color: #1b1005; }
+      a:hover { border-color: var(--accent); color: var(--accent-2); }
+      a.primary:hover { color: #1b1005; opacity: 0.9; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <p class="code">404</p>
+      <h1 data-i18n="title">This page does not exist</h1>
+      <p data-i18n="body">
+        The link may be out of date, or the page may have moved.
+      </p>
+      <div class="actions">
+        <a class="primary" href="/" data-i18n="home">Back to homepage</a>
+        <a href="/#resources" data-i18n="resources">Resources</a>
+      </div>
+    </div>
+    <script>
+      (function () {
+        var copy = {
+          en: {
+            title: "This page does not exist",
+            body: "The link may be out of date, or the page may have moved.",
+            home: "Back to homepage",
+            resources: "Resources",
+            docTitle: "404 | Borong Xu"
+          },
+          zh: {
+            title: "页面不存在",
+            body: "链接可能已经失效，或者页面已被移动。",
+            home: "返回首页",
+            resources: "资源",
+            docTitle: "404 | 许博容"
+          }
+        };
+        var lang;
+        try { lang = localStorage.getItem("site-lang"); } catch (e) {}
+        if (lang !== "en" && lang !== "zh") {
+          lang = navigator.language.toLowerCase().indexOf("zh") === 0 ? "zh" : "en";
+        }
+        var t = copy[lang];
+        document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+        document.title = t.docTitle;
+        document.querySelectorAll("[data-i18n]").forEach(function (el) {
+          el.textContent = t[el.getAttribute("data-i18n")];
+        });
+      })();
+    </script>
+  </body>
+</html>
