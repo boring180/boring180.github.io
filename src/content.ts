@@ -349,7 +349,25 @@ export const resources: ResourceGroup[] = [
       },
     ],
   },
-];
+  {
+    name: "Self-Study Notes",
+    description:
+      "Notes from reading and side projects outside the HKUST curriculum.",
+    links: [
+      {
+        label: "STM32",
+        href: "https://boring180.notion.site/STM32-208e3093facc808fa96dc6ae5c390633",
+      },
+      {
+        label: "Optimal Control",
+        href: "https://boring180.notion.site/Optimal-control-275e3093facc802092dfee01f7947192",
+      },
+      {
+        label: "Probability Robotics",
+        href: "https://boring180.notion.site/Probability-Robotics-2dae3093facc80619879fed73c611b03",
+      },
+    ],
+  },];
 
 export const socials: SocialLink[] = [
   { label: "Email", href: "mailto:borongxu@outlook.com" },
