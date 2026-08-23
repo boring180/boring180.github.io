@@ -658,24 +658,42 @@ main {
   padding: 0.9rem 0 0;
   border-top: 1px solid var(--border);
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
+  flex-direction: column;
+  gap: 0.35rem;
 }
 
+/* Course titles are far too long for a chip, so each entry is a block with the
+   code on top and the official title beneath it. */
 .resource__links a {
-  display: inline-block;
-  font-size: 0.85rem;
-  color: var(--text-dim);
+  display: block;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 0.25rem 0.6rem;
-  transition: border-color 0.15s ease, color 0.15s ease;
+  border-radius: 8px;
+  padding: 0.45rem 0.65rem;
+  transition: border-color 0.15s ease;
+}
+
+.resource__code {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.resource__course {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: var(--text-dim);
 }
 
 .resource__links a:hover {
-  color: var(--accent);
   border-color: var(--accent);
+}
+
+.resource__links a:hover .resource__code {
+  color: var(--accent);
 }
 
 /* Contact */

@@ -68,6 +68,9 @@ export type SocialLink = {
 export type ResourceLink = {
   label: string;
   href: string;
+  /** Official HKUST course title. Left English in both locales, since that is
+   *  how the courses are named and taught. */
+  course?: string;
 };
 
 export type ResourceGroup = {
@@ -145,30 +148,37 @@ const pdfLinks: ResourceLink[] = [
   {
     label: "PHYS 1003CS",
     href: "https://github.com/boring180/Notes/blob/main/PHYS%201003CS.pdf",
+    course: "Energy and Related Environmental Issues",
   },
   {
     label: "COMP 2211",
     href: "https://github.com/boring180/Notes/blob/main/COMP%202211.pdf",
+    course: "Introduction to Artificial Intelligence",
   },
   {
     label: "COMP 2611",
     href: "https://github.com/boring180/Notes/blob/main/COMP%202611.pdf",
+    course: "Computer Organization",
   },
   {
     label: "COMP 2711",
     href: "https://github.com/boring180/Notes/blob/main/COMP%202711.pdf",
+    course: "Discrete Mathematical Tools for Computer Science",
   },
   {
     label: "COMP 3711",
     href: "https://github.com/boring180/Notes/blob/main/COMP%203711.pdf",
+    course: "Design and Analysis of Algorithms",
   },
   {
     label: "COMP5212 notes",
     href: "https://github.com/boring180/Notes/blob/main/COMP5212%20notes.pdf",
+    course: "Machine Learning",
   },
   {
     label: "COMP5212 CS",
     href: "https://github.com/boring180/Notes/blob/main/COMP5212%20CS.pdf",
+    course: "Machine Learning",
   },
 ];
 
@@ -176,38 +186,47 @@ const notionLinks: ResourceLink[] = [
   {
     label: "COMP 2011",
     href: "https://boring180.notion.site/Notes-39caa8bace414374a3eb7952aade134d",
+    course: "Programming with C++",
   },
   {
     label: "COMP 2012",
     href: "https://boring180.notion.site/Notes-81ec774891134e2f8e32b933ec3ce98c",
+    course: "Object-Oriented Programming and Data Structures",
   },
   {
     label: "COMP 2611 (MIPS part)",
     href: "https://boring180.notion.site/MIPS-notes-bca2f6ed46b141458c9ec8bc251a2b20",
+    course: "Computer Organization",
   },
   {
     label: "ELEC 1200",
     href: "https://boring180.notion.site/ELEC-1200-269e3093facc80839d58fa374645eac6",
+    course: "A System View of Communications: from Signals to Packets",
   },
   {
     label: "ELEC 2100",
     href: "https://boring180.notion.site/ELEC-2100-269e3093facc80e99733c092b7bbbca7",
+    course: "Signals and Systems",
   },
   {
     label: "ELEC 3300",
     href: "https://boring180.notion.site/ELEC-3300-269e3093facc80a9918de4a34f29f42c",
+    course: "Introduction to Embedded Systems",
   },
   {
     label: "ELEC 4320",
     href: "https://boring180.notion.site/ELEC-4320-269e3093facc80cc8d83c73622deaa33",
+    course: "FPGA-based Design: From Theory to Practice",
   },
   {
     label: "ELEC 5660",
     href: "https://boring180.notion.site/ELEC5660-2fce3093facc80618de3c02e3babbdc9",
+    course: "Introduction to Aerial Robotics",
   },
   {
     label: "ISDN 2601",
     href: "https://boring180.notion.site/ISDN-2601-4b8d3a379c1a434283f7b69c4c9d93fa",
+    course: "Exploring the World through Smart Mechatronics",
   },
 ];
 
