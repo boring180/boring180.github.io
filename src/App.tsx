@@ -1,30 +1,29 @@
-import {
-  degreeFigure,
-  education,
-  experience,
-  friends,
-  highlights,
-  honors,
-  languages,
-  profile,
-  projects,
-  resources,
-  skills,
-  socials,
-} from "./content";
+import { useEffect, useState } from "react";
+import { navOrder, site, type Lang } from "./content";
 
-const navItems = [
-  { id: "projects", label: "Projects" },
-  { id: "skills", label: "Skills" },
-  { id: "education", label: "Education" },
-  { id: "experience", label: "Experience" },
-  { id: "honors", label: "Honors" },
-  { id: "friends", label: "Friends" },
-  { id: "resources", label: "Resources" },
-  { id: "contact", label: "Contact" },
-];
+const STORAGE_KEY = "site-lang";
+
+function initialLang(): Lang {
+  if (typeof window === "undefined") return "en";
+  const saved = window.localStorage.getItem(STORAGE_KEY);
+  if (saved === "en" || saved === "zh") return saved;
+  return window.navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en";
+}
 
 export default function App() {
+  const [lang, setLang] = useState<Lang>(initialLang);
+  const c = site[lang];
+  const { ui, profile } = c;
+
+  useEffect(() => {
+    window.localStorage.setItem(STORAGE_KEY, lang);
+    document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+    document.title = ui.documentTitle;
+  }, [lang, ui.documentTitle]);
+
+  const sectionIndex = (id: (typeof navOrder)[number]) =>
+    String(navOrder.indexOf(id) + 1).padStart(2, "0");
+
   return (
     <div className="page">
       <header className="nav">
@@ -32,11 +31,19 @@ export default function App() {
           {profile.name}
         </a>
         <nav className="nav__links" aria-label="Primary">
-          {navItems.map((item) => (
-            <a key={item.id} href={`#${item.id}`}>
-              {item.label}
+          {navOrder.map((id) => (
+            <a key={id} href={`#${id}`}>
+              {ui.nav[id]}
             </a>
           ))}
+          <button
+            type="button"
+            className="nav__lang"
+            onClick={() => setLang(lang === "en" ? "zh" : "en")}
+            aria-label={ui.toggleAria}
+          >
+            {ui.toggleLabel}
+          </button>
         </nav>
       </header>
 
@@ -48,7 +55,7 @@ export default function App() {
               <img
                 className="hero__photo"
                 src={profile.photo}
-                alt={`Portrait of ${profile.name}`}
+                alt={profile.name}
                 width={112}
                 height={112}
                 loading="eager"
@@ -57,14 +64,14 @@ export default function App() {
                 <p className="hero__eyebrow">{profile.focus}</p>
                 <h1 className="hero__name">{profile.name}</h1>
                 <p className="hero__title">
-                  {profile.title} · HKUST CPEG Graduate
+                  {profile.title} · {ui.heroSuffix}
                 </p>
               </div>
             </div>
             <p className="hero__summary">{profile.summary}</p>
             <div className="hero__actions">
               <a className="btn btn--primary" href="#projects">
-                View Projects
+                {ui.viewProjects}
               </a>
               <a
                 className="btn btn--ghost"
@@ -72,16 +79,16 @@ export default function App() {
                 target="_blank"
                 rel="noreferrer"
               >
-                View CV
+                {ui.viewCv}
               </a>
               <a className="btn btn--ghost" href={`mailto:${profile.email}`}>
-                Get in Touch
+                {ui.getInTouch}
               </a>
             </div>
           </div>
           <div className="hero__stats">
-            {highlights.map((h) => (
-              <div className="stat" key={h.label}>
+            {c.highlights.map((h) => (
+              <div className="stat" key={h.value}>
                 <span className="stat__value">{h.value}</span>
                 <span className="stat__label">{h.label}</span>
               </div>
@@ -91,10 +98,11 @@ export default function App() {
 
         <section id="projects" className="section">
           <h2 className="section__title">
-            <span className="section__index">01</span> Projects
+            <span className="section__index">{sectionIndex("projects")}</span>{" "}
+            {ui.sections.projects}
           </h2>
           <div className="projects">
-            {projects.map((p) => (
+            {c.projects.map((p) => (
               <article className="card" key={p.title}>
                 <div className="card__head">
                   <h3 className="card__title">{p.title}</h3>
@@ -102,7 +110,10 @@ export default function App() {
                 </div>
                 <p className="card__role">{p.role}</p>
                 {p.supervisor && (
-                  <p className="card__supervisor">Supervised by {p.supervisor}</p>
+                  <p className="card__supervisor">
+                    {ui.supervisorPrefix}
+                    {p.supervisor}
+                  </p>
                 )}
                 <p className="card__desc">{p.description}</p>
                 <ul className="tags">
@@ -132,10 +143,11 @@ export default function App() {
 
         <section id="skills" className="section">
           <h2 className="section__title">
-            <span className="section__index">02</span> Skills
+            <span className="section__index">{sectionIndex("skills")}</span>{" "}
+            {ui.sections.skills}
           </h2>
           <div className="skills">
-            {skills.map((group) => (
+            {c.skills.map((group) => (
               <div className="skill" key={group.name}>
                 <h3 className="skill__name">{group.name}</h3>
                 <ul className="skill__items">
@@ -146,9 +158,9 @@ export default function App() {
               </div>
             ))}
             <div className="skill">
-              <h3 className="skill__name">Languages</h3>
+              <h3 className="skill__name">{ui.languagesTitle}</h3>
               <ul className="skill__items">
-                {languages.map((l) => (
+                {c.languages.map((l) => (
                   <li key={l.language}>
                     {l.language} · {l.fluency}
                   </li>
@@ -160,10 +172,11 @@ export default function App() {
 
         <section id="education" className="section">
           <h2 className="section__title">
-            <span className="section__index">03</span> Education
+            <span className="section__index">{sectionIndex("education")}</span>{" "}
+            {ui.sections.education}
           </h2>
           <div className="timeline">
-            {education.map((e) => (
+            {c.education.map((e) => (
               <article className="timeline__item" key={e.institution}>
                 <div className="timeline__marker" aria-hidden="true" />
                 <div className="timeline__body">
@@ -186,24 +199,25 @@ export default function App() {
           <figure className="figure">
             <img
               className="figure__img"
-              src={degreeFigure.src}
-              alt={degreeFigure.alt}
-              width={degreeFigure.width}
-              height={degreeFigure.height}
+              src={c.degreeFigure.src}
+              alt={c.degreeFigure.alt}
+              width={c.degreeFigure.width}
+              height={c.degreeFigure.height}
               loading="lazy"
             />
             <figcaption className="figure__caption">
-              {degreeFigure.caption}
+              {c.degreeFigure.caption}
             </figcaption>
           </figure>
         </section>
 
         <section id="experience" className="section">
           <h2 className="section__title">
-            <span className="section__index">04</span> Experience
+            <span className="section__index">{sectionIndex("experience")}</span>{" "}
+            {ui.sections.experience}
           </h2>
           <div className="timeline">
-            {experience.map((e) => (
+            {c.experience.map((e) => (
               <article className="timeline__item" key={e.organization}>
                 <div className="timeline__marker" aria-hidden="true" />
                 <div className="timeline__body">
@@ -227,10 +241,11 @@ export default function App() {
 
         <section id="honors" className="section">
           <h2 className="section__title">
-            <span className="section__index">05</span> Honors
+            <span className="section__index">{sectionIndex("honors")}</span>{" "}
+            {ui.sections.honors}
           </h2>
           <ul className="honors">
-            {honors.map((h) => (
+            {c.honors.map((h) => (
               <li className="honors__item" key={h.title}>
                 <span className="honors__year">{h.year}</span>
                 <span className="honors__title">{h.title}</span>
@@ -242,10 +257,11 @@ export default function App() {
 
         <section id="friends" className="section">
           <h2 className="section__title">
-            <span className="section__index">06</span> Friends
+            <span className="section__index">{sectionIndex("friends")}</span>{" "}
+            {ui.sections.friends}
           </h2>
           <div className="friends">
-            {friends.map((f) => (
+            {c.friends.map((f) => (
               <a
                 className="friend"
                 key={f.name}
@@ -273,14 +289,12 @@ export default function App() {
 
         <section id="resources" className="section">
           <h2 className="section__title">
-            <span className="section__index">07</span> Resources
+            <span className="section__index">{sectionIndex("resources")}</span>{" "}
+            {ui.sections.resources}
           </h2>
-          <p className="section__lead">
-            Course notes from my HKUST coursework, shared for anyone taking the
-            same classes.
-          </p>
+          <p className="section__lead">{ui.resourcesLead}</p>
           <div className="resources">
-            {resources.map((group) => (
+            {c.resources.map((group) => (
               <article className="resource" key={group.name}>
                 <div className="resource__head">
                   <h3 className="resource__name">{group.name}</h3>
@@ -313,13 +327,12 @@ export default function App() {
 
         <section id="contact" className="section section--contact">
           <h2 className="section__title">
-            <span className="section__index">08</span> Contact
+            <span className="section__index">{sectionIndex("contact")}</span>{" "}
+            {ui.sections.contact}
           </h2>
-          <p className="contact__text">
-            Open to robotics and embodied intelligence opportunities.
-          </p>
+          <p className="contact__text">{ui.contactText}</p>
           <div className="contact__links">
-            {socials.map((s) => (
+            {c.socials.map((s) => (
               <a
                 className="btn btn--ghost"
                 key={s.label}
@@ -338,7 +351,7 @@ export default function App() {
         <span>
           © {new Date().getFullYear()} {profile.name}
         </span>
-        <span>Built with React + Vite</span>
+        <span>{ui.footerNote}</span>
       </footer>
     </div>
   );

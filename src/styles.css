@@ -24,7 +24,9 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC",
+    sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -61,6 +63,7 @@ a {
 .nav__links {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: clamp(0.75rem, 2vw, 1.5rem);
   font-size: 0.92rem;
   color: var(--text-dim);
@@ -68,6 +71,31 @@ a {
 
 .nav__links a:hover {
   color: var(--accent);
+}
+
+.nav__lang {
+  flex: none;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--text-dim);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.nav__lang:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.nav__lang:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 /* Layout */
@@ -149,6 +177,17 @@ main {
   font-size: 0.8rem;
   color: var(--accent);
   margin: 0 0 0.75rem;
+}
+
+/* Tracking tuned for uppercase Latin reads as stretched in CJK, where glyphs
+   already carry their own side bearing. */
+:lang(zh) .hero__eyebrow {
+  letter-spacing: 0.06em;
+  font-size: 0.85rem;
+}
+
+:lang(zh) .nav__brand {
+  letter-spacing: normal;
 }
 
 .hero__name {
