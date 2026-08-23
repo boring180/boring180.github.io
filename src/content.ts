@@ -554,7 +554,7 @@ const zh: SiteContent = {
       title: "大语言模型智能体开发",
       role: "本科生研究机会计划（UROP），香港科技大学",
       period: "2024年6月 - 2026年5月",
-      supervisor: "Prof. Shenghui Song",
+      supervisor: "宋胜辉教授",
       description:
         "设计并实现了能够进行棋牌类博弈的大语言模型智能体，并对其策略与性能进行了系统评估。",
       tags: ["大语言模型", "智能体", "评估", "Python"],
