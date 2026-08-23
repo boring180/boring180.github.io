@@ -260,7 +260,7 @@ const en: SiteContent = {
       "Course notes from my HKUST coursework, shared for anyone taking the same classes.",
     contactText: "Open to robotics and embodied intelligence opportunities.",
     footerNote: "Built with React + Vite",
-    documentTitle: "Borong Xu | Robotics Portfolio",
+    documentTitle: "Borong Xu | Homepage",
   },
   profile: {
     name: "Borong Xu",
@@ -515,7 +515,7 @@ const zh: SiteContent = {
     resourcesLead: "我的课程笔记，分享给修读相同课程的同学。",
     contactText: "欢迎机器人与具身智能相关的合作与工作机会。",
     footerNote: "使用 React + Vite 构建",
-    documentTitle: "许博容 | 机器人作品集",
+    documentTitle: "许博容 | 主页",
   },
   profile: {
     name: "许博容",
