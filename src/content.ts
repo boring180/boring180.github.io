@@ -545,7 +545,7 @@ const zh: SiteContent = {
       title: "乐高装配理解",
       role: "在研项目，由香港科技大学机器人建造实验室（RFL）与深圳河套学院联合指导",
       period: "2026年3月 - 至今",
-      supervisor: "Prof. Ziqi Wang",
+      supervisor: "汪子琦教授",
       description:
         "研究乐高装配的自动化理解，结合计算机视觉与规划方法，从可视化装配说明与三维模型中还原逐步装配结构。",
       tags: ["计算机视觉", "深度学习", "装配规划", "PyTorch"],
@@ -566,7 +566,7 @@ const zh: SiteContent = {
       title: "空中机器人导论（ELEC5660）",
       role: "课程项目，香港科技大学",
       period: "2026年2月 - 2026年5月",
-      supervisor: "Prof. Shaojie Shen",
+      supervisor: "沈劭劼教授",
       description:
         "从零开始实现空中机器人算法，包括视觉惯性里程计（VIO）、扩展卡尔曼滤波（EKF）状态估计以及自主路径规划，在仿真环境中实现了稳健的无人机定位、建图与导航。",
       tags: ["VIO", "EKF", "路径规划", "无人机"],
@@ -580,7 +580,7 @@ const zh: SiteContent = {
       title: "四足机器人控制",
       role: "科研实习，新南威尔士大学",
       period: "2025年2月 - 2025年8月",
-      supervisor: "Prof. Maurice Pagnucco & Prof. Yang Song",
+      supervisor: "Maurice Pagnucco教授和Yang Song教授",
       description:
         "构建并编程宇树 GO2 四足机器人以执行复杂任务，集成深度相机进行准确的物体定位（误差小于 10cm），并使用激光雷达完成 SLAM 建图。",
       tags: ["宇树 GO2", "SLAM", "激光雷达", "深度相机"],
@@ -595,7 +595,7 @@ const zh: SiteContent = {
       title: "水下多相机定位系统",
       role: "毕业设计，香港科技大学",
       period: "2025年6月 - 2026年5月",
-      supervisor: "Prof. Huan Yin & Prof. Fumin Zhang",
+      supervisor: "尹欢教授和张福民教授",
       description:
         "开发了基于多相机视觉的定位系统，用于跟踪多个自主水下航行器（AUV）。降低了水下复杂光线场景下的定位误差，在 1m × 1m 范围内将定位精度提升至 10cm 以内。",
       tags: ["计算机视觉", "定位", "多相机", "AUV"],
@@ -680,7 +680,7 @@ const zh: SiteContent = {
       avatar: "https://meowww9.github.io/assets/images/my-avatar.png",
       url: "https://meowww9.github.io/",
       bio: "新南威尔士大学 工程学院",
-      description: "我的唯一",
+      description: "My only one",
     },
     {
       name: "ZhangzrJerry",
