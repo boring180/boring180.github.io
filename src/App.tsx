@@ -3,10 +3,20 @@ import { navOrder, site, type Lang } from "./content";
 
 const STORAGE_KEY = "site-lang";
 
+// The Aliyun deployment serves a mainland-facing audience, so it opens in
+// Chinese; GitHub Pages keeps the English default. An explicit choice already
+// stored by the visitor still wins over both.
+const ZH_DEFAULT_HOSTS = [
+  "boring180.asia",
+  "www.boring180.asia",
+  "boring180.oss-cn-hongkong.aliyuncs.com",
+];
+
 function initialLang(): Lang {
   if (typeof window === "undefined") return "en";
   const saved = window.localStorage.getItem(STORAGE_KEY);
   if (saved === "en" || saved === "zh") return saved;
+  if (ZH_DEFAULT_HOSTS.includes(window.location.hostname)) return "zh";
   return window.navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en";
 }
 
